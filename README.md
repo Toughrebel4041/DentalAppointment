@@ -1,15 +1,15 @@
 # Dental Clinic Appointment Application
-##### Team Members: Raihan Sultan, Raditya Aiman, Suryandari Puspita
+## Team Members: Raihan Sultan, Raditya Aiman, Suryandari Puspita
 
-##### Project Title: Dental Clinic Appointment
-
-## Application Details:
+### Project Title: Dental Clinic Appointment
+***
+### Application Details:
 
 This application is designed to make it easier for patients and dentists to manage appointments at a dental clinic. Patients can easily register, create appointment schedules, and view their visit history. Dentists can view their appointment schedules, manage patient information, and record important details about each visit.
 
 System Users: Doctor (Admin), User (Must Register -> Database)
 ***
-## Features:
+### Features:
 
 ##### User Management:
 
