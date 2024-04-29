@@ -18,6 +18,9 @@
             color:black;
             border-style: double; 
             padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
         nav {
             background-color: grey;
@@ -61,7 +64,7 @@
                         <a class="nav-link active" aria-current="page" href="index.php?p=faq">FAQ</a>
                       </li>
                     </ul>
-                    <a class="navbar-brand" href="index.php?p=home">Login/Register</a>
+                    <a class="navbar-brand" href="index.php?p=login">Login/Register</a>
                     <form class="d-flex">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-inline-success" type="submit">Search</button>
