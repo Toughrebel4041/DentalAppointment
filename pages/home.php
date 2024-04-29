@@ -67,7 +67,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Bleaching</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/08/29043653/kategori-Bleaching-Gigi.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Bleaching Gigi atau pemutihan gigi merupakan prosedur estetika yang digunakan untuk
               membuat permukaan gigi tampak lebih putih, dan bersih.</p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -77,7 +77,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Derect veneer</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1611295592/attached_image/veneer-gigi-ini-yang-harus-anda-ketahui.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Direct veneer adalah jenis veneer yang dipasang secara langsung pada pasien menggunakan
               bahan resin komposit.</p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -86,8 +86,8 @@
         <div class="card col-sm-4" style="width: 27.86rem;">
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
-            <h5 class="card-title">Inderect veneer</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <h5 class="card-title">Indirect veneer</h5>
+            <img src="https://d1ojs48v3n42tp.cloudfront.net/medical_procedures/58354_2-11-2021_18-18-34.jpeg" class="img-thumbnail" alt="...">
             <p class="card-text">Inderect veneer adalah jenis veneer yang proses pemasangan tidak
               dilakukan langsung pada gigi.</p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -97,7 +97,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Gigi palsu (Zirconia)</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://arinidentalcare.com/wp-content/uploads/2024/02/kelebihan_gigi_tiruan_zirconia.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Zirconia adalah salah satu bahan yang dapat digunakan untuk gigi palsu, bahan ini
               terbuat dari titanium.</p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -107,7 +107,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Gigi palsu (PFM)</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://platinumdental.com.my/wp-content/uploads/elementor/thumbs/image8-pbhlm6sk5pea15vdn6doqkfhz47p6ilvith1klbe0o.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Gigi tiruan permanen bahan PFM adalah salah satu jenis gigi tiruan dengan bahan metal
               yang diindikasikan pada pasien yang kehilangan gigi aslinya, dan sangat disarankan untuk gigi belakang.
             </p>
@@ -118,7 +118,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Scaling</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://res.cloudinary.com/dk0z4ums3/image/upload/v1668053492/attached_image/ketahui-apa-itu-scaling-gigi.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Scaling Gigi adalah prosedur untuk melakukan pembersihan karang gigi. Karang gigi
               terbentuk dari tumpukan plak yang menempel pada permukaan gigi. </p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -128,7 +128,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Behel gigi (Metal)</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://static.hdmall.id/system/image_attachments/images/000/041/332/original/shutterstock_417290032.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Kawat Gigi atau biasa disebut sebagai Behel adalah alat berbasis kawat yang digunakan
               oleh ortodontis untuk memperbaiki gigi atau rahang yang tidak rata dan gigi yang bertumpuk.</p>
             <a href="#" class="btn btn-primary">More Info</a>
@@ -157,7 +157,7 @@
           <div class="card col-sm-3">
             <div class="card-body">
               <h5 class="card-title">Drg. Raihan Sultan Pasha Basuki</h5>
-              <img src="..." class="img-thumbnail" alt="...">
+              <img src="https://media.licdn.com/dms/image/D5603AQEALmZwW2oc4A/profile-displayphoto-shrink_800_800/0/1692865198786?e=1720051200&v=beta&t=mk7gfUTHicXqUYK4mrxLFAwH01OcruNtF8CQtHKKxWE" class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
             </div>
@@ -165,7 +165,7 @@
           <div class="card col-sm-3">
             <div class="card-body">
               <h5 class="card-title">Drg. Suryandari Puspita Hartiati</h5>
-              <img src="..." class="img-thumbnail" alt="...">
+              <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t39.30808-6/440268975_2848352585312393_56305696031118310_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH9KYl07EvgGSb94Tey4pJY3YDD_uFh7KjdgMP-4WHsqJXjFLkoPQa3T6Ski-H5Hx5S5r47Ai3ZezhTI-tlGxzX&_nc_ohc=zopHQO64TxgQ7kNvgFeeeqC&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfDz7Or-RwGKzv91EPaDkePrpUOQS3apNVPPM7BWEyjEhg&oe=6635962F" class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
             </div>
@@ -173,7 +173,7 @@
           <div class="card col-sm-3">
             <div class="card-body">
               <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
-              <img src="..." class="img-thumbnail" alt="...">
+              <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t1.18169-9/19756374_1999380137015361_925476902975039611_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEiIz2CBGwf5lqsnCESKDh3Wss1zjW-TshayzXONb5OyEu72-zHBKaug35HzrXSDsX-MDDzdgByPw_GOLNG8EJq&_nc_ohc=J0QvoMsU13EQ7kNvgEMoq6r&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfAYG3Mhc5cKDXDx_8yB_M5nxu2tOkzhzUGg9n7ujuCGxw&oe=66572B3B" class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
             </div>
