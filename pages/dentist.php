@@ -13,18 +13,18 @@ if(isset($_POST['btnSubmit'])){
     $objDentist->username = $_POST['username'];
     $objDentist->password = $_POST['password'];
 
-    if(isset($_GET['ssn'])){
-        $objDentist->ssn = $_GET['ssn'];
+    if(isset($_GET['dentistID'])){
+        $objDentist->dentistID = $_GET['dentistID'];
         $objDentist->UpdateDentist();
     } else {
      $objDentist->AddDentist();
     }
     echo "<script> alert('$objDentist->message'); </script>";
     if($objDentist->hasil){
-        echo '<script> window.location = "index.php?p=dentistlist";</script>';
+        echo '<script> window.location = "index.php?p=dentistList";</script>';
     }
-} else if (isset($_GET['ssn'])){
-        $objDentist->ssn = $_GET['ssn'];
+} else if (isset($_GET['dentistID'])){
+        $objDentist->dentistID = $_GET['dentistID'];
         $objDentist->SelectOneDentist();
     }
 ?>
@@ -36,39 +36,39 @@ if(isset($_POST['btnSubmit'])){
 <form action="" method="post">
     <table class="table">
         <tr>
-        <td>SSN</td>
+        <td>dentistID</td>
         <td>:</td>
-        <td><input type="text" class="form-control" name="ssn" value="<?php echo $objDentist->ssn; ?>"></td>
+        <td><input type="text" class="form-control" name="dentistID" value="<?php echo $objDentist->dentistID; ?>"></td>
     </tr>
     <tr>
         <td>First Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="fname" name="fname" value="<?php echo $objDentist->fname; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="fname" name="fname" value="<?php echo $objDentist->fname; ?>"></td>
     </tr>    
     <tr>
         <td>Last Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="lname" name="lname" value="<?php echo $objDentist->lname; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="lname" name="lname" value="<?php echo $objDentist->lname; ?>"></td>
     </tr>    
     <tr>
         <td>Sex</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="sex" name="sex" value="<?php echo $objDentist->sex; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="sex" name="sex" value="<?php echo $objDentist->sex; ?>"></td>
     </tr>    
     <tr>
         <td>Practice License ID</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="licenseID" name="licenseID" value="<?php echo $objDentist->licenseID; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="licenseID" name="licenseID" value="<?php echo $objDentist->licenseID; ?>"></td>
     </tr>   
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="email" name="email" value="<?php echo $objDentist->email; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="email" name="email" value="<?php echo $objDentist->email; ?>"></td>
     </tr>
     <tr>
         <td>Telephone</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="telp" name="telp" value="<?php echo $objDentist->telp; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="telp" name="telp" value="<?php echo $objDentist->telp; ?>"></td>
     </tr>
     <tr>
         <td>Address</td>
@@ -79,12 +79,12 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td>Username</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="username" name="username" value="<?php echo $objDentist->username; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="username" name="username" value="<?php echo $objDentist->username; ?>"></td>
     </tr>   
     <tr>
         <td>Password</td>
         <td>:</td>
-        <td><input type="text" class="form-control" ssn="password" name="password" value="<?php echo $objDentist->password; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="password" name="password" value="<?php echo $objDentist->password; ?>"></td>
     </tr>   
     <tr>
         <td colspan="2"></td>

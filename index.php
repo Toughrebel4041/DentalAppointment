@@ -18,9 +18,6 @@
             color:black;
             border-style: double; 
             padding: 20px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
         }
         nav {
             background-color: grey;
