@@ -173,7 +173,7 @@
           <div class="card col-sm-3">
             <div class="card-body">
               <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
-              <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t1.18169-9/19756374_1999380137015361_925476902975039611_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEiIz2CBGwf5lqsnCESKDh3Wss1zjW-TshayzXONb5OyEu72-zHBKaug35HzrXSDsX-MDDzdgByPw_GOLNG8EJq&_nc_ohc=J0QvoMsU13EQ7kNvgEMoq6r&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfAYG3Mhc5cKDXDx_8yB_M5nxu2tOkzhzUGg9n7ujuCGxw&oe=66572B3B" class="img-thumbnail" alt="...">
+              <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t1.6435-9/118901432_2927133837573315_8644131355994684441_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGnI4HKXmoDG1pu5lXqaCuwCsqodp5J1LsKyqh2nknUu6qpDBvutZ_P-eK7xB_v2t4eiOB-UnM1FhPwSVFWbMPD&_nc_ohc=wCu8NvWWPIEQ7kNvgEdmO4C&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfDFv0GzdHAHN1nuyrswsp0G8qg5pA-fbFgKqzNJFZkGrA&oe=66573AEE" class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
             </div>
