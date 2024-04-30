@@ -142,7 +142,7 @@
           <h5 class="card-header">Treatment</h5>
           <div class="card-body">
             <h5 class="card-title">Behel gigi (Ceramic)</h5>
-            <img src="..." class="img-thumbnail" alt="...">
+            <img src="https://cdn.hellosehat.com/wp-content/uploads/2019/01/Invisalign-Clarity-Braces-700x467.jpg" class="img-thumbnail" alt="...">
             <p class="card-text">Ortho dengan berbahan ceramic ini yang sewarna dengan gigi, sehingga tampilan behel
               menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada pekerjaaanya.</p>
             <a href="#" class="btn btn-primary">More Info</a>
