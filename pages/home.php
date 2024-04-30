@@ -26,6 +26,10 @@
     background-color: #f8f9fa;
     padding: 3rem 0;
   }
+  img{
+    width:150px;
+    height:150px;
+  }
 </style>
 
 <div>

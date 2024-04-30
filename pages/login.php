@@ -5,9 +5,9 @@ if(isset($_POST['submit'])){
         $pass=$_POST['password'];
     
         ?>
-        <h5>Redirecting to Transaction Page in 3 ...</h5>
+        <h5>Redirecting to Landing Page in 3 ...</h5>
         <div class="container-fluid">
-        <h3>Selamat Datang </h3><?php echo $user?>    
+        <h3>Selamat Datang </h3><?php echo $user?>
 </div>
             <script>
                 alert("Login Berhasil! Selamat Datang!");
