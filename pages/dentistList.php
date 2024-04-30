@@ -39,7 +39,7 @@
             echo '<td>'.$dataDentist->address.'</td>';
             echo '<td>'.$dataDentist->username.'</td>';
             echo '<td>'.$dataDentist->password.'</td>';
-            echo '<td><a class="btn btn-warning" href="index.php?p=Dentist&ssn='.$dataDentist->dentistID.'"> Edit </a> | <a class="btn btn-danger" href="index.php?p=deleteDentist&ssn='.$dataDentist->dentistID.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
+            echo '<td><a class="btn btn-warning" href="index.php?p=dentist&dentistID='.$dataDentist->dentistID.'"> Edit </a> | <a class="btn btn-danger" href="index.php?p=deleteDentist&ssn='.$dataDentist->dentistID.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
             echo '</tr>';
             $no++;
         }
