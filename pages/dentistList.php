@@ -15,8 +15,6 @@
         <th>Email</th>
         <th>Telephone</th>
         <th>Address</th>
-        <th>Username</th>
-        <th>Password</th>
     </tr>
     <?php
     require_once('./class/class.Dentist.php');
@@ -37,8 +35,6 @@
             echo '<td>'.$dataDentist->email.'</td>';
             echo '<td>'.$dataDentist->telp.'</td>';
             echo '<td>'.$dataDentist->address.'</td>';
-            echo '<td>'.$dataDentist->username.'</td>';
-            echo '<td>'.$dataDentist->password.'</td>';
             echo '<td><a class="btn btn-warning" href="index.php?p=dentist&dentistID='.$dataDentist->dentistID.'"> Edit </a> | <a class="btn btn-danger" href="index.php?p=deleteDentist&ssn='.$dataDentist->dentistID.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
             echo '</tr>';
             $no++;

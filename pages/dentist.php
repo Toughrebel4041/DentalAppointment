@@ -10,8 +10,6 @@ if(isset($_POST['btnSubmit'])){
     $objDentist->email = $_POST['email'];
     $objDentist->telp = $_POST['telp'];
     $objDentist->address = $_POST['address'];
-    $objDentist->username = $_POST['username'];
-    $objDentist->password = $_POST['password'];
 
     if(isset($_GET['dentistID'])){
         $objDentist->dentistID = $_GET['dentistID'];
@@ -63,7 +61,7 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="email" name="email" value=""<?php echo $objDentist->email; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="email" name="email" value="<?php echo $objDentist->email; ?>"></td>
     </tr>
     <tr>
         <td>Telephone</td>
@@ -76,16 +74,6 @@ if(isset($_POST['btnSubmit'])){
         <td><textarea class="form-control" name="address" rows="3" cols="19">
         <?php echo $objDentist->address; ?></textarea></td>
     </tr>
-    <tr>
-        <td>Username</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" dentistID="username" name="username" value="<?php echo $objDentist->username; ?>"></td>
-    </tr>   
-    <tr>
-        <td>Password</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" dentistID="password" name="password" value="<?php echo $objDentist->password; ?>"></td>
-    </tr>   
     <tr>
         <td colspan="2"></td>
         <td><input type="submit" class="btn btn-success" value="Save" name="btnSubmit">
