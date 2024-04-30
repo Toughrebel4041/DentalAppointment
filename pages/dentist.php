@@ -63,7 +63,7 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="email" name="email" value="<?php echo $objDentist->email; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="email" name="email" value=""<?php echo $objDentist->email; ?>"></td>
     </tr>
     <tr>
         <td>Telephone</td>

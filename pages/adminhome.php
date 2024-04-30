@@ -34,7 +34,7 @@
 
 <div>
   <div>
-    <h1> Welcome on Dashboard, Dentist <h1><?php echo $fname; ?>
+    <h1> Welcome on Dashboard, Dentist <h1><?php echo $_GET['fname']; ?>
     <!-- carousel -->
     <div>
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">

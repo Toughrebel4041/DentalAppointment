@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
 </div>
             <script>
                 alert("Login Berhasil! Selamat Datang!");
-                setTimeout("window.location.href = 'transaksi.php';", 3000);
+                setTimeout("window.location.href = 'adminhome.php';", 3000);
                 </script>
         <?php
     } else {
