@@ -149,7 +149,7 @@
           </div>
         </div>
       </div>
-      <a href="#" class="btn btn-primary my-4">More Treatment</a>
+      <a href="treatment.php" class="btn btn-primary my-4">More Treatment</a>
     </div>
     <!-- Treatment end -->
 

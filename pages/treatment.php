@@ -132,7 +132,7 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-6 text-center">
-                        <img src="https://www.maesadental.com/services/gigi-palsu--emax--1683948841" class="img-fluid rounded-start" alt="...">
+                        <img src="https://www.maesadental.com/uploads/YEYCTAZNhqiQxm6vqNcbdyRZvNN8A0orSlewKS8P.png.png" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-6">
                         <div class="card-body">
