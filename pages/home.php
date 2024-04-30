@@ -39,13 +39,13 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dentist-banner-design-template-5eac4c6f7642c93b594dd1abc980086a_screen.jpg?ts=1645015198" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://img.freepik.com/premium-psd/dentist-dental-care-instagram-post-social-media-banner-square-flyer-poster-template-design_567310-120.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="https://content.wepik.com/statics/15536894/preview-page0.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
