@@ -46,7 +46,13 @@ button {
  .container {   
         padding: 25px;   
         background-color: lightgrey;  
-    }   
+    }  
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
 input[name="submit"]{width: auto;   
         padding: 10px 18px;  
