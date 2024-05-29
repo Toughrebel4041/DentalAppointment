@@ -30,36 +30,39 @@
     width:150px;
     height:150px;
   }
+
+  .carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
 </style>
 
 <div>
   <div>
     <!-- carousel -->
-    <div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dentist-banner-design-template-5eac4c6f7642c93b594dd1abc980086a_screen.jpg?ts=1645015198" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://img.freepik.com/premium-psd/dentist-dental-care-instagram-post-social-media-banner-square-flyer-poster-template-design_567310-120.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://content.wepik.com/statics/15536894/preview-page0.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dentist-banner-design-template-5eac4c6f7642c93b594dd1abc980086a_screen.jpg?ts=1645015198" class="d-block w-100 img-fluid" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="https://img.freepik.com/premium-psd/dentist-dental-care-instagram-post-social-media-banner-square-flyer-poster-template-design_567310-120.jpg" class="d-block w-100 img-fluid" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://content.wepik.com/statics/15536894/preview-page0.jpg" class="d-block w-100 img-fluid" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
     <!-- carousel end -->
 
 
@@ -169,7 +172,7 @@
           <div class="card col-sm-3">
             <div class="card-body">
               <h5 class="card-title">Drg. Suryandari Puspita Hartiati</h5>
-              <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t39.30808-6/440268975_2848352585312393_56305696031118310_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH9KYl07EvgGSb94Tey4pJY3YDD_uFh7KjdgMP-4WHsqJXjFLkoPQa3T6Ski-H5Hx5S5r47Ai3ZezhTI-tlGxzX&_nc_ohc=zopHQO64TxgQ7kNvgFeeeqC&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfDz7Or-RwGKzv91EPaDkePrpUOQS3apNVPPM7BWEyjEhg&oe=6635962F" class="img-thumbnail" alt="...">
+              <img src="https://scontent.fcgk4-3.fna.fbcdn.net/v/t39.30808-6/440268975_2848352585312393_56305696031118310_n.jpg?stp=c0.58.526.526a_dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEhckPO5yEzV2jeSCKeoMSD3YDD_uFh7KjdgMP-4WHsqDOARAwsTB-J4a9qRK_4DJb7kVQVpnUR_LhzRZtNZa7E&_nc_ohc=Xc4wM7dafbAQ7kNvgH-r0rv&_nc_zt=23&_nc_ht=scontent.fcgk4-3.fna&oh=00_AYDriA2M0ihjGsDbQFU0L2iaSc9OIrb3TnNZcK0CF4RVNQ&oe=665D5B6F" class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
             </div>
