@@ -60,7 +60,7 @@ require "inc.koneksi.php";
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="index.php?p=profile">Profile</a></li>
-                <li><a class="dropdown-item" href="index.php?p=dentist">Dentist</a></li>
+                <li><a class="dropdown-item" href="index.php?p=dentistprofile">Dentist</a></li>
                 <li><a class="dropdown-item" href="index.php?p=facilities">Facilities</a></li>
                 <li><a class="dropdown-item" href="index.php?p=contact">Contact Us</a></li>
               </ul>

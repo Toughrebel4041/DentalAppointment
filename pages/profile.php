@@ -7,13 +7,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 90vh;
     }
 
     .centered-image {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 30%;
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10%;
     }
 
     .img-thumbnail {
@@ -21,21 +21,19 @@
     }
 
     header {
-      background-color: #333;
+      background-color: black;
       color: #fff;
       text-align: center;
-      padding: 20px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5em;
-      margin: 0;
     }
 
     main {
       padding: 30px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       text-align: justify;
       font-family: 'Lora', serif;
@@ -49,25 +47,14 @@
       padding: 20px;
     }
 
-    footer h4 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5em;
-      font-weight: 700;
-      margin: 0;
-    }
-
-    footer h5 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2em;
-      font-weight: 400;
-      margin: 0;
-    }
   </style>
 </head>
 
 <body>
   <header>
+    <div id = "profil">
     <h1>SSR Dental Clinic</h1>
+    </div>
   </header>
   <div class="centered-image-container">
     <img src="https://miro.medium.com/v2/resize:fit:2800/0*4qdnnZsmWtl0Z8Rf.jpg" alt="Centered Image" class="centered-image img-fluid">
@@ -95,9 +82,106 @@
       Surat Izin Praktek (SIP): 0123456789<br>
       Izin Operational Klinik: Terverifikasi
     </p>
+
+    <br><br><br>
+    <br><br><br>
+    <header>
+      <div id="dentistprofile">
+        <h1>Dokter Gigi SSR Dental Clinic</h1>
+      </div>
+    </header>
+    <div class="dentist-wrapper">
+      <h2 class="text-center mb-3">Spesialis Tambal Gigi</h2>
+      <div class="text-center mx-auto mb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Raihan Sultan Pasha Basuki</h5>
+                <img src="https://media.licdn.com/dms/image/D5603AQEALmZwW2oc4A/profile-displayphoto-shrink_800_800/0/1692865198786?e=1720051200&v=beta&t=mk7gfUTHicXqUYK4mrxLFAwH01OcruNtF8CQtHKKxWE" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Suryandari Puspita Hartiati</h5>
+                <img src="https://media.licdn.com/dms/image/D5603AQFWCyFhP1TUZg/profile-displayphoto-shrink_400_400/0/1717168612779?e=1722470400&v=beta&t=tVTacKsp8b5RlhKxqSDRAcXj9tiUrM5mlcQArf9vKAo" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
+                <img src="https://scontent-cgk1-1.xx.fbcdn.net/v/t1.6435-9/118901432_2927133837573315_8644131355994684441_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGnI4HKXmoDG1pu5lXqaCuwCsqodp5J1LsKyqh2nknUu6qpDBvutZ_P-eK7xB_v2t4eiOB-UnM1FhPwSVFWbMPD&_nc_ohc=wCu8NvWWPIEQ7kNvgEdmO4C&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfDFv0GzdHAHN1nuyrswsp0G8qg5pA-fbFgKqzNJFZkGrA&oe=66573AEE" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Ahmad Marioale Sulolipu</h5>
+                <img src="https://scontent.fcgk4-4.fna.fbcdn.net/v/t1.18169-9/10482593_487541774722754_8953259003322339041_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgXyT5R637uABIc3v2JvjElUuFrvCULhaVS4Wu8JQuFk_f3L4WjhwaRsFOwkY6d181aviR64iJtwDmfkIrW8Ss&_nc_ohc=l3TGP8qKi5AQ7kNvgGpalTJ&_nc_ht=scontent.fcgk4-4.fna&oh=00_AYAHJJRab1NUcwv9BKvNtd7BvpTLs0h9RlTSlxaEX2TD6A&oe=668169A8" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-center mb-3">Spesialis Estetika Gigi</h2>
+      <div class="text-center mx-auto mb-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Muhammad Yahya</h5>
+                <img src="https://scontent.fcgk4-2.fna.fbcdn.net/v/t39.30808-1/285728928_707401853889939_7567600931586379314_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHTKdGX9dAKLr0yYbGU8qrGmJoLd_ROGfKYmgt39E4Z8gRVINj_UEYBDmXBzIq7e_Z_cbC65t9v3Vqphvzf8_lo&_nc_ohc=ViV52akQcUgQ7kNvgGGAw0W&_nc_ht=scontent.fcgk4-2.fna&oh=00_AYBOrN61MArBoSrCDCbIUtGdQRvMJS5gZxtEnn23toyKnQ&oe=665FD3AC" class="img-thumbnail" alt="...">
+                <p class="card-text">Spesialis estetik banget ini, anaknya soalnya skena boy</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Kinanty Kusuma</h5>
+                <img src="foto kinann.JPG" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Nilla Aristya Untarry</h5>
+                <img src="https://media.licdn.com/dms/image/D5603AQH6HH0t_zB_BQ/profile-displayphoto-shrink_800_800/0/1694852059647?e=2147483647&v=beta&t=zxmbPMYgPHxmoj1sCyfinKGFsMuxYYqSTZSxkI6bw8Q" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Muhammad Said Abbas</h5>
+                <img src="foto abbas.jpg" class="img-thumbnail" alt="...">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
+                <a href="#" class="btn btn-primary">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <h4>&copy; 2024 SSR Dental Clinic</h4>
-    <h5>Kelompok SSR</h5>
-  </footer>
 </body>
+</html>

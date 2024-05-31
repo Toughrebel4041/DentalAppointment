@@ -1,6 +1,7 @@
 <style>
   body {
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
   }
 
   .treatment-section {
@@ -158,7 +159,7 @@
 
     <!-- Dentist -->
     <div class="dentist-wrapper">
-      <h2 class="text-center mb-3">Dentist</h2>
+      <h2 class="text-center mb-3">Pendiri SSR Clinic</h2>
       <div class="text-center mx-auto mb-5">
         <div class="row grid gap-3 justify-content-center">
           <div class="card col-sm-3">
