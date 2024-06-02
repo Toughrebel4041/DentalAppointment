@@ -1,3 +1,27 @@
+<?php
+require_once('./class/class.User.php');
+
+if(isset($_POST['btnSubmit'])){
+            $inputemail=$_POST["email"];
+            $objUser = new User();
+            $objUser->ValidateEmail($inputemail);
+            if($objUser->hasil){
+                echo "<script>alert('Email sudah terdaftar'); </script>";
+            } else {
+                $objUser->email=$_POST["email"];
+                $password = $_POST['password'];
+                $objUser->password = password_hash($password, PASSWORD_DEFAULT);
+                $objUser->name=$_POST["name"];
+                $objUser->role='employee';
+                $objUser->AddUser();
+                if($objUser->hasil){
+                    echo "<script> alert('Registrasi berhasil'); </script>";
+                    echo '<script> window.location="index.php?p=login"; </script>';
+                }
+            }
+        }
+?>
+
 <div>
     <style>
         button {
