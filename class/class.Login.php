@@ -29,7 +29,7 @@ class Login extends Connection{
             $this->message ='Login Gagal!';
     }
 
-    public function UpdateUsername(){
+    public function UpdateLogin(){
         $sql = "UPDATE login
                 SET username ='$this->username'
                 WHERE password = '$this->password'";
@@ -50,6 +50,27 @@ class Login extends Connection{
             $this->message ='Data gagal dihapus!';
     }
 
- 
+    public function SelectAllEmployee(){
+        $sql = "SELECT * FROM employee";
+        $result = mysqli_query($this->connection, $sql);
+        $arrResult = Array();
+        $count=0;
+        if(mysqli_num_rows($result) > 0){
+        
+        while ($data = mysqli_fetch_array($result))
+        {
+        $objEmployee = new Login();
+        $objEmployee->ssn=$data['ssn'];
+        $objEmployee->fname=$data['fname'];
+        $objEmployee->address=$data['address'];
+        $arrResult[$count] = $objEmployee;
+        $count++;
+        }
+
+        }
+        return $arrResult;
+    }
+
+    
 }
 ?>
