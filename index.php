@@ -100,8 +100,8 @@ require "inc.koneksi.php";
     }
     ?>
   </main>
-  <footer>
-    <div class="container-fluid">
+  <footer class="fixed-bottom">
+    <div>
       <h4 style="font-weight:800;">Copyright &copy; 2024</h4>
       <h5>Kelompok SSR</h5>
     </div>
