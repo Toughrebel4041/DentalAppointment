@@ -2,21 +2,22 @@
 require_once('./class/class.User.php');
 
 if(isset($_POST['btnSubmit'])){
-            $inputemail=$_POST["email"];
+            $inputeusername=$_POST["username"];
             $objUser = new User();
-            $objUser->ValidateEmail($inputemail);
+            $objUser->ValidateUsername($inputeusername);
             if($objUser->hasil){
-                echo "<script>alert('Email sudah terdaftar'); </script>";
+                echo "<script>alert('Username sudah terdaftar'); </script>";
             } else {
                 $objUser->email=$_POST["email"];
+                $objUser->username=$_POST["username"];
                 $password = $_POST['password'];
                 $objUser->password = password_hash($password, PASSWORD_DEFAULT);
                 $objUser->name=$_POST["name"];
-                $objUser->role='employee';
+                $objUser->role='patient';
                 $objUser->AddUser();
                 if($objUser->hasil){
                     echo "<script> alert('Registrasi berhasil'); </script>";
-                    echo '<script> window.location="index.php?p=login"; </script>';
+                    echo '<script> window.location="index.php?p=registerUser"; </script>';
                 }
             }
         }
@@ -65,27 +66,25 @@ if(isset($_POST['btnSubmit'])){
             bottom: 0;
             width: 100%;
         }
-
-
-        input[name="submit"] {
-            width: auto;
-            padding: 10px 18px;
-            margin: 10px 5px;
-            background-color: green;
-        }
     </style>
 
     <center>
         <h1> Sign Up </h1>
     </center>
-    <form action="transaksi.php" method="post">
+    <form action="" method="post">
         <div class="container">
             <label>Username : </label>
             <input type="text" placeholder="Enter Username" name="username" required>
             <label>Password : </label>
             <input type="password" placeholder="Enter Password" name="password" required>
-            <input name="submit" type="submit" value=" Create Account ">
-            <button type="button" class="cancelbtn" style="background-color:red;">Cancel</button>
+            <label>Email : </label>
+            <br>
+            <input type="email" placeholder="Enter your email" name="email" required>
+            <br>
+            <label>Name : </label>
+            <input type="text" placeholder="Enter Your Name" name="name" required>
+            <input type="submit" class="btn btn-primary" value="Register" name="btnSubmit">
+            <a href="index.php" class="btn btn-danger">Cancel</a></td>
         </div>
     </form>
 </div>

@@ -2,10 +2,11 @@
 class User extends Connection{
     private $userid = 0;
     private $email = '';
+    private $username = '';
     private $password = '';
     private $name = '';
     private $role = '';
-    private $emp = '';
+    private $pat = '';
 
     private $hasil = false;
     private $message = '';
@@ -21,24 +22,25 @@ class User extends Connection{
         }
     }
     public function AddUser(){
-        $sql = "INSERT INTO user (email, password, name, role) VALUES ('$this->email', '$this->password', '$this->name', '$this->role')";
+        $sql = "INSERT INTO user (userid, email, username, password, name, role) VALUES ('$this->userid','$this->email', '$this->username','$this->password', '$this->name', '$this->role')";
         $this->hasil = mysqli_query($this->connection, $sql);
         if($this->hasil)
         $this->message ='Data berhasil ditambahkan!';
         else
         $this->message ='Data gagal ditambahkan!';
     }
-    public function ValidateEmail($inputemail){
+    public function ValidateUsername($inputeusername){
 
         $sql = "SELECT * FROM user
         
-        WHERE email = '$inputemail'";
+        WHERE username = '$inputeusername'";
         
         $result = mysqli_query($this->connection, $sql);
         if (mysqli_num_rows ($result) == 1){
         $this->hasil = true;
         $data = mysqli_fetch_assoc($result);
         $this->userid = $data['userid'];
+        $this->username = $data['username'];
         $this->password = $data['password'];
         $this->name=$data['name'];
         $this->email=$data['email'];
