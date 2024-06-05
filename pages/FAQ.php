@@ -11,7 +11,10 @@
         </script>
     <title>Treatment SSR Clinic</title>
     <style>
-
+        .pencet {
+            margin: 3px;
+            width: 50rem;
+        }
     </style>
 </head>
 
@@ -21,10 +24,10 @@
 
         ?>
     </header>
-    <div class="faq-section">
-        <div class="faq-title">Lorem Ipsum Dolor</div>
+    <div class="text-center faq-section my-5" aria-labelledby="navbarDropdown">
+        <div class="faq-title mb-3 "><h2>FAQ</h2></div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Dimana saja lokasi SSR Dental Clinic?
             </a>
@@ -35,7 +38,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Jam Operasional SSR Dental Clinic ada di jam berapa?
             </a>
@@ -44,7 +47,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Apa SSR Dental Clinic menerima pasien anak?
             </a>
@@ -53,7 +56,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Apa SSR Dental Clinic menerima pasien kontrol behel pindahan?
             </a>
@@ -62,7 +65,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Adakah fasilitas Rontgen di SSR Dental Clinic
             </a>
@@ -71,7 +74,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Apakah pasien dapat datang langsung tanpa reservasi?
             </a>
@@ -80,7 +83,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Di SSR Dental Clinic bisa menggunakan pembayaran apa saja?
             </a>
