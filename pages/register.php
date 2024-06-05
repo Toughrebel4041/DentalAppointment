@@ -2,6 +2,7 @@
 require_once('./class/class.User.php');
 
 if(isset($_POST['btnSubmit'])){
+    //add username and password with default roles assigned is patient
             $inputeusername=$_POST["username"];
             $objUser = new User();
             $objUser->ValidateUsername($inputeusername);
@@ -21,6 +22,7 @@ if(isset($_POST['btnSubmit'])){
                 }
             }
         }
+        
 ?>
 
 <div>
