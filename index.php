@@ -71,7 +71,7 @@ require "inc.koneksi.php";
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.php?p=partnership">Partnership</a></li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.php?p=faq">FAQ</a></li>
+              <a class="nav-link active" aria-current="page" href="index.php?p=FAQ">FAQ</a></li>
           </ul>
           <a class="navbar-brand" href="index.php?p=login">Login/Register</a>
           <form class="d-flex">
@@ -100,7 +100,7 @@ require "inc.koneksi.php";
     }
     ?>
   </main>
-  <footer class="fixed-bottom">
+  <footer >
     <div>
       <h4 style="font-weight:800;">Copyright &copy; 2024</h4>
       <h5>Kelompok SSR</h5>
