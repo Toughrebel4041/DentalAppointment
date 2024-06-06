@@ -39,7 +39,7 @@ if(isset($_POST['btnSubmit'])){
             border: 3px solid #f1f1f1;
         }
 
-        input[type=text],
+        input[type=text], input[type=email],
         input[type=password] {
             width: 100%;
             margin: 8px 0;
