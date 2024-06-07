@@ -1,22 +1,40 @@
-<div>
 <?php
-if(isset($_POST['submit'])){
-        $user=$_POST['username'];
-        $pass=$_POST['password'];
-    
-        ?>
-        <h5>Redirecting to Landing Page in 3 ...</h5>
-        <div class="container-fluid">
-        <h3>Selamat Datang </h3><?php echo $user?>
-</div>
-            <script>
-                alert("Login Berhasil! Selamat Datang!");
-                setTimeout("window.location.href = 'adminhome.php';", 3000);
-                </script>
-        <?php
-    } else {
 
-        ?>
+require_once('./class/class.User.php');
+    if(isset($_POST['btnLogin'])){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $objUser = new User();
+        $objUser->hasil = true;
+        $objUser->ValidateUsername($username);
+    if($objUser->hasil){
+        $ismatch = password_verify($password, $objUser->password);
+    if($ismatch){
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+    $_SESSION["userid"]= $objUser->userid;
+    $_SESSION["role"]= $objUser->role;
+    $_SESSION["name"]= $objUser->name;
+    $_SESSION["email"]= $objUser->email;
+    echo "<script>alert('Login sukses');</script>";
+    if($objUser->role == 'patient')
+        echo '<script>window.location = "userhome.php";</script>';
+    else if($objUser->role == 'dentist')
+        echo '<script>window.location = "dentisthome.php";</script>';
+    else if($objUser->role == 'admin')
+        echo '<script>window.location = "adminhome.php";</script>';
+
+    }
+        else{
+            echo "<script>alert('Password tidak match');</script>";
+        }
+    }
+    else{
+        echo "<script>alert('Email tidak terdaftar');</script>";
+    }
+    }
+    ?>
 <style>
 button {   
        width: 100%;  
@@ -61,18 +79,15 @@ input[name="submit"]{width: auto;
 </style>   
 
 <center> <h1> Login </h1> </center>   
-    <form action="transaksi.php" method="post">  
+    <form action="" method="post">  
         <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" required>  
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
-            <input name="submit" type="submit" value=" Login "> 
-            <button type="button" class="cancelbtn" style="background-color:red;">Cancel</button>
+            <input type="submit" class="btn btn-success" value="Login" name="btnLogin">
+            <a href="index.php" class="btn btn-danger">Cancel</a></td>
             <a class="nav-link active" aria-current="page" href="index.php?p=register">Don't have an account yet?</a>
         </div>   
     </form>
-    <?php
-        }
-    ?>
 </div>

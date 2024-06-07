@@ -96,15 +96,13 @@ require "inc.koneksi.php";
         echo 'Halaman tidak ditemukan! :(';
       }
     } else {
-      include "home.php";
+      include "./pages/home.php";
     }
     ?>
   </main>
-  <footer >
-    <div>
+  <footer>
       <h4 style="font-weight:800;">Copyright &copy; 2024</h4>
       <h5>Kelompok SSR</h5>
-    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

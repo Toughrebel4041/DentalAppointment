@@ -41,8 +41,8 @@ class Login extends Connection{
             $this->message ='Username gagal diubah!';
     }
 
-    public function DeleteEmployee(){
-        $sql = "DELETE FROM employee WHERE ssn='$this->ssn'";
+    public function DeleteUser(){
+        $sql = "DELETE FROM user WHERE userid='$this->userid'";
         $this->hasil = mysqli_query($this->connection, $sql);
         if($this->hasil)
             $this->message ='Data berhasil dihapus!';
@@ -50,7 +50,7 @@ class Login extends Connection{
             $this->message ='Data gagal dihapus!';
     }
 
-    public function SelectAllEmployee(){
+    public function SelectAllUser(){
         $sql = "SELECT * FROM employee";
         $result = mysqli_query($this->connection, $sql);
         $arrResult = Array();
@@ -59,11 +59,11 @@ class Login extends Connection{
         
         while ($data = mysqli_fetch_array($result))
         {
-        $objEmployee = new Login();
-        $objEmployee->ssn=$data['ssn'];
-        $objEmployee->fname=$data['fname'];
-        $objEmployee->address=$data['address'];
-        $arrResult[$count] = $objEmployee;
+        $objUser = new Login();
+        $objUser->ssn=$data['ssn'];
+        $objUser->fname=$data['fname'];
+        $objUser->address=$data['address'];
+        $arrResult[$count] = $objUser;
         $count++;
         }
 
