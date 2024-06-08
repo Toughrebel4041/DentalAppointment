@@ -1,9 +1,13 @@
+<br>
+<br>
 <h4 class="title">
     <span class="text">
         <strong>Dentist List</strong>
     </span>
 </h4>
-<a class="btn btn-primary" href="index.php?p=Dentist">Add</a>
+<a class="btn btn-primary" href="index.php?p=dentist">Add</a>
+<br>
+<br>
 <table class="table table-bordered">
     <tr>
         <th>No.</th>
@@ -35,7 +39,7 @@
             echo '<td>'.$dataDentist->email.'</td>';
             echo '<td>'.$dataDentist->telp.'</td>';
             echo '<td>'.$dataDentist->address.'</td>';
-            echo '<td><a class="btn btn-warning" href="index.php?p=dentist&dentistID='.$dataDentist->dentistID.'"> Edit </a> | <a class="btn btn-danger" href="index.php?p=deleteDentist&ssn='.$dataDentist->dentistID.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
+            echo '<td><a class="btn btn-warning" href="adminhome.php?p=dentist&dentistID='.$dataDentist->dentistID.'"> Edit </a> | <a class="btn btn-danger" href="adminhome.php?p=deleteDentist&ssn='.$dataDentist->dentistID.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
             echo '</tr>';
             $no++;
         }

@@ -19,7 +19,7 @@ if(isset($_POST['btnSubmit'])){
     }
     echo "<script> alert('$objDentist->message'); </script>";
     if($objDentist->hasil){
-        echo '<script> window.location = "index.php?p=dentistList";</script>';
+        echo '<script> window.location = "adminhome.php?p=dentistList";</script>';
     }
 } else if (isset($_GET['dentistID'])){
         $objDentist->dentistID = $_GET['dentistID'];
@@ -41,32 +41,32 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td>First Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="fname" name="fname" value="<?php echo $objDentist->fname; ?>"></td>
+        <td><input type="text" class="form-control" ssn="fname" name="fname" value="<?php echo $objDentist->fname; ?>"></td>
     </tr>    
     <tr>
         <td>Last Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="lname" name="lname" value="<?php echo $objDentist->lname; ?>"></td>
+        <td><input type="text" class="form-control" ssn="lname" name="lname" value="<?php echo $objDentist->lname; ?>"></td>
     </tr>    
     <tr>
         <td>Sex</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="sex" name="sex" value="<?php echo $objDentist->sex; ?>"></td>
+        <td><input type="radio" name="sex" value="M" /> Male <br><input type="radio" name="sex" value="F" /> Female</td>
     </tr>    
     <tr>
         <td>Practice License ID</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="licenseID" name="licenseID" value="<?php echo $objDentist->licenseID; ?>"></td>
+        <td><input type="text" class="form-control" name="licenseID" value="<?php echo $objDentist->licenseID; ?>"></td>
     </tr>   
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="email" name="email" value="<?php echo $objDentist->email; ?>"></td>
+        <td><input type="email" class="form-control" name="email" value="<?php echo $objDentist->email; ?>"></td>
     </tr>
     <tr>
         <td>Telephone</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="telp" name="telp" value="<?php echo $objDentist->telp; ?>"></td>
+        <td><input type="tel" class="form-control" name="telp" value="<?php echo $objDentist->telp; ?>"></td>
     </tr>
     <tr>
         <td>Address</td>
@@ -77,7 +77,7 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td colspan="2"></td>
         <td><input type="submit" class="btn btn-success" value="Save" name="btnSubmit">
-            <a href="index.php?p=Dentistlist" class="btn btn-warning">Cancel</a>
+            <a href="adminhome.php?p=Dentistlist" class="btn btn-warning">Cancel</a>
         </td>
     </tr>
     </table>

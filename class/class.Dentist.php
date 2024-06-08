@@ -25,8 +25,16 @@ class Dentist extends Connection {
     }
 
     public function AddDentist(){
-        $sql = "INSERT INTO Dentist (dentistID, fname, address)
-                VALUES ('$this->dentistID', '$this->fname', '$this->address')";
+        $sql = "INSERT INTO Dentist (dentistID, fname, lname, sex,address, licenseID, email, telp)
+                VALUES ('$this->dentistID',
+                    fname = '$this->fname',
+                    lname = '$this->lname',
+                    sex = '$this->sex',
+                    address = '$this->address',
+                    licenseID = '$this->licenseID',
+                    email = '$this->email',
+                    tel = '$this->tel',
+                    userid = '$this->userid'')";
 
         $this->hasil = mysqli_query($this->connection, $sql);
         if($this->hasil)
@@ -36,9 +44,16 @@ class Dentist extends Connection {
     }
 
     public function UpdateDentist(){
-        $sql = "UPDATE Dentist
-                SET fname ='$this->fname',
-                    address = '$this->address'
+        $sql = "UPDATE dentist
+                SET dentistID ='$this->dentistID',
+                    fname = '$this->fname',
+                    lname = '$this->lname',
+                    sex = '$this->sex',
+                    address = '$this->address',
+                    licenseID = '$this->licenseID',
+                    email = '$this->email',
+                    telp = '$this->telp',
+                    userid = '$this->userid'
                 WHERE dentistID = '$this->dentistID'";
 
         $this->hasil = mysqli_query($this->connection, $sql);
