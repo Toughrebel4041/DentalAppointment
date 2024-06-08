@@ -32,6 +32,11 @@
     width: 150px;
     height: 150px;
   }
+  .img-thumbnail {
+      width: 150px;
+      height: 150px;
+      border-radius: 30%;
+    }
 
   .carousel-item img {
     width: 100%;
