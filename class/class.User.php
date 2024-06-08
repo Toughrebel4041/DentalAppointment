@@ -65,5 +65,29 @@ class User extends Connection{
         $this->role=$data['role'];
         }
     }
+
+    public function SelectAllUser(){
+        $sql = "SELECT * FROM user";
+        $result = mysqli_query($this->connection, $sql);
+        $arrResult = Array();
+        $count=0;
+        if(mysqli_num_rows($result) > 0){
+        
+        while ($data = mysqli_fetch_array($result))
+        {
+        $objUser = new User();
+        $objUser->userid=$data['userid'];
+        $objUser->email=$data['email'];
+        $objUser->password=$data['password'];
+        $objUser->name=$data['name'];
+        $objUser->role=$data['role'];
+        $objUser->username=$data['username'];
+        $arrResult[$count] = $objUser;
+        $count++;
+        }
+
+        }
+        return $arrResult;
+    }
 }
 ?>

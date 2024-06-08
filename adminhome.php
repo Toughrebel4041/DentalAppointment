@@ -70,21 +70,20 @@ require "inc.koneksi.php";
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="adminhome.php?p=partnership">Partnership</a></li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="adminhome.php?p=FAQ">FAQ</a></li>
           </ul>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="adminhome.php?p=book">Booking</a>
-            </li>
+              <a class="nav-link active" aria-current="page" href="adminhome.php?p=dentistList">Dentist List</a></li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="adminhome.php?p=profileView">Your Profile</a>
-            </li>
+              <a class="nav-link active" aria-current="page" href="adminhome.php?p=userView">All Users</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="adminhome.php?p=addDentist">Add Dentist</a></li>
+            
           </ul>
           <a class="navbar-brand" href="adminhome.php?p=logout">Logout</a>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-light" type="submit">Search</button>
           </form>
         </div>
       </div>

@@ -58,7 +58,7 @@ class Dentist extends Connection {
     }
 
     public function SelectAllDentist(){
-        $sql = "SELECT * FROM Dentist";
+        $sql = "SELECT * FROM dentist";
         $result = mysqli_query($this->connection, $sql);
         $arrResult = Array();
         $count=0;
