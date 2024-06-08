@@ -33,11 +33,11 @@
     height: 150px;
   }
 
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-  }
-  
+  .carousel-inner img {
+      width: 100%;
+      height: 500px; 
+      object-fit: cover; 
+    }
 </style>
 <br>
 <br>
@@ -46,41 +46,41 @@
  
     <!-- carousel -->
     <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img
-          src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dentist-banner-design-template-5eac4c6f7642c93b594dd1abc980086a_screen.jpg?ts=1645015198"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img
-          src="https://img.freepik.com/premium-psd/dentist-dental-care-instagram-post-social-media-banner-square-flyer-poster-template-design_567310-120.jpg"
-          class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://content.wepik.com/statics/15536894/preview-page0.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden-focusable">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden-focusable">Next</span>
-    </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
   </div>
-  <div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img
+        src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/dentist-banner-design-template-5eac4c6f7642c93b594dd1abc980086a_screen.jpg?ts=1645015198"
+        class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img
+        src="https://img.freepik.com/premium-psd/dentist-dental-care-instagram-post-social-media-banner-square-flyer-poster-template-design_567310-120.jpg"
+        class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://content.wepik.com/statics/15536894/preview-page0.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden-focusable">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden-focusable">Next</span>
+  </button>
+</div>
+
 
     <!-- carousel end -->
 
