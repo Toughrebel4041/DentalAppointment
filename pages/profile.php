@@ -20,6 +20,12 @@
     border-radius: 30%;
   }
 
+  .dentist-wrapper .card-body img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  }
+
   .carousel-inner img {
     width: 100%;
     height: 500px;
@@ -127,7 +133,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
-                <img src="https://scontent.fcgk4-2.fna.fbcdn.net/v/t1.6435-1/118901432_2927133837573315_8644131355994684441_n.jpg?stp=dst-jpg_p200x200&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE9juKhtQt-t6TOzn1JRcuSCsqodp5J1LsKyqh2nknUu1sm_M_X7As0dPHKgaRiVPWBJgXOUVPaFdzaVLJuy0Xn&_nc_ohc=4X9CFpQPt0IQ7kNvgFIyBZh&_nc_ht=scontent.fcgk4-2.fna&oh=00_AYDEvbVEroo2JvgcHi00GtlGPO9zHaA5JlYpleUn8H37Uw&oe=668BE19E" class="img-thumbnail" alt="...">
+                <img src="Foto Radi.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Aiman berfokus pada pemulihan struktur gigi yang rusak dengan teknik modern dan bahan berkualitas tinggi</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
@@ -138,7 +144,7 @@
               <div class="card-body">
                 <h5 class="card-title">Drg. Ahmad Marioale Sulolipu</h5>
                 <img src="https://scontent.fcgk4-4.fna.fbcdn.net/v/t1.18169-9/10482593_487541774722754_8953259003322339041_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgXyT5R637uABIc3v2JvjElUuFrvCULhaVS4Wu8JQuFk_f3L4WjhwaRsFOwkY6d181aviR64iJtwDmfkIrW8Ss&_nc_ohc=l3TGP8qKi5AQ7kNvgGpalTJ&_nc_ht=scontent.fcgk4-4.fna&oh=00_AYAHJJRab1NUcwv9BKvNtd7BvpTLs0h9RlTSlxaEX2TD6A&oe=668169A8" class="img-thumbnail" alt="...">
-                <p class="card-text">Drg. Mario memiliki keahlian dalam perawatan tambalan gigi yang presisi dan estetis, beliau fokus pada perhatian penuh dan kenyamanan pasien.</p>
+                <p class="card-text">Drg. Mario memiliki keahlian spesifik dalam perawatan tambalan gigi yang presisi dan estetis demi kenyamanan pasien.</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
             </div>
@@ -163,7 +169,7 @@
               <div class="card-body">
                 <h5 class="card-title">Drg. Kinanty Kusuma</h5>
                 <img src="foto kinann.JPG" class="img-thumbnail" alt="...">
-                <p class="card-text">Drg. Kinan menawarkan solusi komprehensif untuk memperbaiki senyuman pasien. Dari pemutihan gigi hingga pembentukan ulang gigi, beliau memastikan hasil yang memuaskan, estetis, hasil yang alami dan menawan.</p>
+                <p class="card-text">Drg. Kinan menawarkan solusi komprehensif untuk memperbaiki senyuman pasien. Dari pemutihan gigi hingga pembentukan ulang gigi, beliau memastikan hasil yang memuaskan.</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
             </div>
@@ -183,7 +189,7 @@
               <div class="card-body">
                 <h5 class="card-title">Drg. Muhammad Said Abbas</h5>
                 <img src="foto abbas.jpg" class="img-thumbnail" alt="...">
-                <p class="card-text">Drg. Abbas ahli dalam mempercantik senyuman, seperti veneer, bonding, dan kontur gigi, pasien dijamin mencapai senyuman yang menawan.</p>
+                <p class="card-text">Drg. Abbas memiliki keahlian dalam mempercantik senyuman, seperti veneer, bonding, dan kontur gigi, pasien dijamin mencapai senyuman yang menawan.</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
             </div>
