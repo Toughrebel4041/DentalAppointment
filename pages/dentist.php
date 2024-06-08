@@ -1,6 +1,8 @@
 <?php
 require_once('./class/class.Dentist.php');
+require_once('./class/class.User.php');
 $objDentist = new Dentist();
+$objUser = new User();
 if(isset($_POST['btnSubmit'])){
     $objDentist->dentistID = $_POST['dentistID'];
     $objDentist->fname = $_POST['fname'];
@@ -10,6 +12,7 @@ if(isset($_POST['btnSubmit'])){
     $objDentist->email = $_POST['email'];
     $objDentist->telp = $_POST['telp'];
     $objDentist->address = $_POST['address'];
+    $objDentist->user->userid = $_POST['userid'];
 
     if(isset($_GET['dentistID'])){
         $objDentist->dentistID = $_GET['dentistID'];
@@ -73,6 +76,11 @@ if(isset($_POST['btnSubmit'])){
         <td>:</td>
         <td><textarea class="form-control" name="address" rows="3" cols="19">
         <?php echo $objDentist->address; ?></textarea></td>
+    </tr> 
+    <tr>
+        <td>User ID</td>
+        <td>:</td>
+        <td><input type="text" class="form-control" name="userid" value="<?php echo $objDentist->user->userid; ?>"></td>
     </tr>
     <tr>
         <td colspan="2"></td>

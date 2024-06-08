@@ -1,5 +1,7 @@
 <?php
+include 'class.User.php';
 class Dentist extends Connection {
+    private $user;
     private $dentistID='';
     private $fname = '';
     private $lname = '';
@@ -24,8 +26,13 @@ class Dentist extends Connection {
         }
     }
 
+    function __construct(){
+        parent::__construct();
+        $this->user = new User();
+    }
+    
     public function AddDentist(){
-        $sql = "INSERT INTO Dentist (dentistID, fname, lname, sex,address, licenseID, email, telp)
+        $sql = "INSERT INTO Dentist (dentistID, fname, lname, sex,address, licenseID, email, telp, user->userid)
                 VALUES ('$this->dentistID',
                     fname = '$this->fname',
                     lname = '$this->lname',

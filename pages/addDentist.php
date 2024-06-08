@@ -83,7 +83,7 @@ if(isset($_POST['btnSubmit'])){
     <tr>
         <td>User ID</td>
         <td>:</td>
-        <td><input type="text" class="form-control" dentistID="userid" name="userid" value="<?php echo $objDentist->userid; ?>"></td>
+        <td><input type="text" class="form-control" dentistID="userid" name="userid" value="<?php echo $objDentist->user->userid; ?>"></td>
     </tr>
     <tr>
         <td colspan="2"></td>
