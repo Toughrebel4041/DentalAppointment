@@ -73,6 +73,14 @@ require "inc.koneksi.php";
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="userhome.php?p=FAQ">FAQ</a></li>
           </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="userhome.php?p=book">Booking</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="userhome.php?p=profileView">Your Profile</a>
+            </li>
+          </ul>
           <a class="navbar-brand" href="userhome.php?p=logout">Logout</a>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -107,7 +115,7 @@ require "inc.koneksi.php";
     }
     ?>
   </main><br>
-  <footer>
+  <footer class="fixed-bottom">
       <h4 style="font-weight:800;">Copyright &copy; 2024</h4>
       <h5>Kelompok SSR</h5>
   </footer>

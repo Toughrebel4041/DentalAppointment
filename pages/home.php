@@ -36,9 +36,10 @@
   width: 100%;
   height: auto;
 }
-
+  
 </style>
-
+<br>
+<br>
 <div>
   <div>
     <!-- carousel -->
@@ -68,6 +69,8 @@
 
 
     <!-- Treatment -->
+     <br>
+     <br>
     <h2 class="text-center mb-3">Treatment</h2>
     <div class="text-center mx-5">
       <div class="row grid gap-3">
