@@ -32,6 +32,11 @@
     width: 150px;
     height: 150px;
   }
+
+  .d-block{
+    width: auto;
+    height: 500px;
+  }
   .img-thumbnail {
       width: 150px;
       height: 150px;
@@ -46,7 +51,7 @@
   .carousel-inner img {
       width: 100%;
       height: 500px; 
-      object-fit: cover; 
+      
     }
 </style>
 <br>
