@@ -1,117 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    .faq-section {
+        background-color: grey;
+        padding: 20px; 
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-    <title>Treatment SSR Clinic</title>
-    <style>
-        .pencet {
-            margin: 3px;
-            width: 50rem;
-        }
-    </style>
-</head>
+    .accordion-item {
+        background-color: #ffffff;
+        margin-bottom: 10px; 
+    }
+
+    .accordion-body {
+        background-color: #f3f4f6; 
+    }
+</style>
 
 <body>
-    <header>
-        <?php
-
-        ?>
-    </header>
+<div class="text-center faq-section my-5 container">
     <div class="text-center faq-section my-5" aria-labelledby="navbarDropdown">
         <div class="faq-title mb-3 "><h2>FAQ</h2></div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dimana saja lokasi SSR Dental Clinic?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jl. TB Simatupang, RT.3/RW.3, Cilandak Tim., Ps. Minggu, Kota Jakarta
-                        Selatan,
-                        Daerah Khusus Ibukota Jakarta 12560</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Jam Operasional SSR Dental Clinic ada di jam berapa?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Apa SSR Dental Clinic menerima pasien anak?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Apa SSR Dental Clinic menerima pasien kontrol behel pindahan?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Adakah fasilitas Rontgen di SSR Dental Clinic
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Apakah pasien dapat datang langsung tanpa reservasi?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <a class="pencet btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Di SSR Dental Clinic bisa menggunakan pembayaran apa saja?
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item">Jawabannya disini</a></li>
-            </ul>
-        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Apakah SSR Dental Clinic memiliki cabang?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Tidak, SSR Dental Clinic hanya ada 1 yaa di Indonesia dan tidak memiliki cabang di negara manapun.</div>
     </div>
-
-    <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
-                const answer = item.nextElementSibling;
-                if (answer.style.display === "block") {
-                    answer.style.display = "none";
-                } else {
-                    answer.style.display = "block";
-                }
-            });
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Dimana lokasi SSR Dental Clinic?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lokasi SSR Dental Clinic ada di Menara 165 Jalan. T.B. Simatupang, Jakarta Selatan, DKI Jakarta 12560 <br> yang diatas gedungnya ada lafadz Allah SWT yaa, catettt!!</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Bagaimana dengan jam operasional SSR Dental Clinic?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SSR Dental Clinic buka setiap hari dari pukul 09.00 - 20.00 WIB yaa</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Apakah SSR Dental Clinic menerima pembayaran menggunakan asuransi?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SSR Dental Clinic menerima pembayaran menggunakan asuransi apapun ya sobat, seperti BPJS, KIS, dan lain sebagainya.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Apakah SSR Dental Clinic menerima pasien tanpa reservasi?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SSR Dental Clinic menerima semua pasien yang datang yaa sobat SSR, namun memang disarankan untuk reservasi terlebih dahulu agar sobat SSR lebih mudah untuk request dokter kesayangan! </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Apakah SSR Dental Clinic menerima pasien kontrol behel pindahan?
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Tentu saja, nanti kamu tinggal berikan saja catatan riwayat konsultasi behel dari dokter sebelumnya ketika proses reservasi di SSR Dental Clinic yaa</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Dimana saya bisa melihat pricelist harga treatment SSR Dental Clinic?
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Sobat SSR dapat melihat informasi lengkap terkait treatment yang disediakan oleh SSR Dental Clinik pada laman Treatments yaa</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+        Apakah SSR Dental Clinic menerima pasien anak?
+      </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">SSR Dental Clinic menerima pasien dari berbagai usia yaa sobat, bisa disesuaikan ketika proses reservasi untuk terkait dokter yang disarankan! </div>
+    </div>
+  </div>
+</div>
+    </div>
+    
 </body>
 
 </html>
