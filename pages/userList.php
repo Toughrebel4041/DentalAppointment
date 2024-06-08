@@ -1,3 +1,4 @@
+<div>
 <br>
 <br>
 <h4 class="title">
@@ -7,7 +8,7 @@
 </h4>
 <br>
 
-<a class="btn btn-primary" href="index.php?p=employee">Add</a>
+<a class="btn btn-primary" href="adminhome.php?p=user">Add</a>
 <table class="table table-bordered">
     <tr>
         <th>No.</th>
@@ -33,10 +34,11 @@
             echo '<td>'.$dataUser->name.'</td>';
             echo '<td>'.$dataUser->role.'</td>';
             echo '<td>'.$dataUser->username.'</td>';
-            echo '<td><a class="btn btn-warning" href="index.php?p=employee&ssn='.$dataUser->userid.'"> Edit </a> | <a class="btn btn-danger" href="index.php?p=deleteemployee&ssn='.$dataUser->usersid.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
+            echo '<td><a class="btn btn-warning" href="adminhome.php?p=user&userid='.$dataUser->userid.'"> Edit </a> | <a class="btn btn-danger" href="adminhome.php?p=deleteuser&userid='.$dataUser->usersid.'"onclick="return confirm(\'Apakah anda yakin ingin menghapus?\')">Delete </a> </td>';
             echo '</tr>';
             $no++;
         }
     }
     ?>
 </table>
+</div>

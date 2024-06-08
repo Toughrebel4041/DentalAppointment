@@ -89,5 +89,34 @@ class User extends Connection{
         }
         return $arrResult;
     }
+
+    public function UpdateUser(){
+        $sql = "UPDATE user
+                SET email ='$this->email',
+                    name = '$this->name',
+                    role = '$this->role',
+                    username = '$this->username'
+                WHERE userid = '$this->userid'";
+
+        $this->hasil = mysqli_query($this->connection, $sql);
+        if($this->hasil)
+            $this->message ='Data berhasil diubah!';
+        else
+            $this->message ='Data gagal diubah!';
+    }
+
+    public function SelectOneUser(){
+        $sql = "SELECT * FROM user WHERE userid='$this->userid'";
+        $resultOne = mysqli_query($this->connection, $sql);
+        if(mysqli_num_rows($resultOne) == 1){
+            $this->hasil = true;
+            $data = mysqli_fetch_assoc($resultOne);
+            $this->email = $data['email'];
+            $this->userid = $data['userid'];
+            $this->name = $data['name'];
+            $this->role = $data['role'];
+            $this->username=$data['username'];
+        }
+    }
 }
 ?>

@@ -33,10 +33,25 @@
     height: 150px;
   }
 
+  .d-block{
+    width: auto;
+    height: 500px;
+  }
+  .img-thumbnail {
+      width: 150px;
+      height: 150px;
+      border-radius: 30%;
+    }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
   .carousel-inner img {
       width: 100%;
       height: 500px; 
-      object-fit: cover; 
+      
     }
 </style>
 <br>
@@ -186,7 +201,7 @@
           </div>
         </div>
       </div>
-      <a href="pages/treatment.php" class="btn btn-primary my-4">More Treatment</a>
+      <a href="index.php?p=treatment" class="btn btn-primary my-4">More Treatment</a>
     </div>
     <!-- Treatment end -->
 
@@ -209,7 +224,7 @@
             <div class="card-body">
               <h5 class="card-title">Drg. Suryandari Puspita Hartiati</h5>
               <img
-                src="https://scontent.fcgk4-3.fna.fbcdn.net/v/t39.30808-6/440268975_2848352585312393_56305696031118310_n.jpg?stp=c0.58.526.526a_dst-jpg_p526x296&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEhckPO5yEzV2jeSCKeoMSD3YDD_uFh7KjdgMP-4WHsqDOARAwsTB-J4a9qRK_4DJb7kVQVpnUR_LhzRZtNZa7E&_nc_ohc=Xc4wM7dafbAQ7kNvgH-r0rv&_nc_zt=23&_nc_ht=scontent.fcgk4-3.fna&oh=00_AYDriA2M0ihjGsDbQFU0L2iaSc9OIrb3TnNZcK0CF4RVNQ&oe=665D5B6F"
+                src="https://media.licdn.com/dms/image/D5603AQFWCyFhP1TUZg/profile-displayphoto-shrink_400_400/0/1717168612779?e=1722470400&v=beta&t=tVTacKsp8b5RlhKxqSDRAcXj9tiUrM5mlcQArf9vKAo"
                 class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>
@@ -219,7 +234,7 @@
             <div class="card-body">
               <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
               <img
-                src="https://scontent-cgk1-1.xx.fbcdn.net/v/t1.6435-9/118901432_2927133837573315_8644131355994684441_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGnI4HKXmoDG1pu5lXqaCuwCsqodp5J1LsKyqh2nknUu6qpDBvutZ_P-eK7xB_v2t4eiOB-UnM1FhPwSVFWbMPD&_nc_ohc=wCu8NvWWPIEQ7kNvgEdmO4C&_nc_ht=scontent-cgk1-1.xx&cb_e2o_trans=t&oh=00_AfDFv0GzdHAHN1nuyrswsp0G8qg5pA-fbFgKqzNJFZkGrA&oe=66573AEE"
+                src="Foto Radi.jpg"
                 class="img-thumbnail" alt="...">
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
               <a href="#" class="btn btn-primary">More Info</a>

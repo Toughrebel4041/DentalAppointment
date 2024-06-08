@@ -75,7 +75,7 @@ require "inc.koneksi.php";
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="adminhome.php?p=dentistList">Dentist List</a></li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="adminhome.php?p=userView">All Users</a></li>
+              <a class="nav-link active" aria-current="page" href="adminhome.php?p=userList">All Users</a></li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="adminhome.php?p=addDentist">Add Dentist</a></li>
             
@@ -114,7 +114,7 @@ require "inc.koneksi.php";
     }
     ?>
   </main><br>
-  <footer class="fixed-bottom">
+  <footer>
       <h4 style="font-weight:800;">Copyright &copy; 2024</h4>
       <h5>Kelompok SSR</h5>
   </footer>
