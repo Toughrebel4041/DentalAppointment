@@ -201,7 +201,7 @@
           </div>
         </div>
       </div>
-      <a href="pages/treatment.php" class="btn btn-primary my-4">More Treatment</a>
+      <a href="index.php?p=treatment" class="btn btn-primary my-4">More Treatment</a>
     </div>
     <!-- Treatment end -->
 
