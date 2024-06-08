@@ -128,7 +128,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Drg. Ahmad Marioale Sulolipu</h5>
-                <img src="https://scontent.fcgk4-4.fna.fbcdn.net/v/t1.18169-9/10482593_487541774722754_8953259003322339041_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgXyT5R637uABIc3v2JvjElUuFrvCULhaVS4Wu8JQuFk_f3L4WjhwaRsFOwkY6d181aviR64iJtwDmfkIrW8Ss&_nc_ohc=l3TGP8qKi5AQ7kNvgGpalTJ&_nc_ht=scontent.fcgk4-4.fna&oh=00_AYAHJJRab1NUcwv9BKvNtd7BvpTLs0h9RlTSlxaEX2TD6A&oe=668169A8" class="img-thumbnail" alt="...">
+                <img src="foto mario.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
@@ -153,7 +153,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Drg. Kinanty Kusuma</h5>
-                <img src="foto kinann.JPG" class="img-thumbnail" alt="...">
+                <img src="foto kinan.JPG" class="img-thumbnail" alt="...">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
@@ -173,7 +173,7 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Drg. Muhammad Said Abbas</h5>
-                <img src="foto abbas.jpg" class="img-thumbnail" alt="...">
+                <img src="Foto abbas.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum malesuada</p>
                 <a href="#" class="btn btn-primary">More Info</a>
               </div>
