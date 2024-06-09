@@ -115,7 +115,7 @@
                 <h5 class="card-title">Drg. Raihan Sultan Pasha Basuki</h5>
                 <img src="https://media.licdn.com/dms/image/D5603AQEALmZwW2oc4A/profile-displayphoto-shrink_800_800/0/1692865198786?e=1720051200&v=beta&t=mk7gfUTHicXqUYK4mrxLFAwH01OcruNtF8CQtHKKxWE" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Raihan merupakan seorang spesialis tambal gigi yang mahir dalam menangani kerusakan gigi akibat karies</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#raihan" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
                 <h5 class="card-title">Drg. Suryandari Puspita Hartiati</h5>
                 <img src="https://media.licdn.com/dms/image/D5603AQFWCyFhP1TUZg/profile-displayphoto-shrink_400_400/0/1717168612779?e=1722470400&v=beta&t=tVTacKsp8b5RlhKxqSDRAcXj9tiUrM5mlcQArf9vKAo" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Suryandari dikenal karena pendekatannya yang ramah dan teliti dalam perawatan gigi berlubang.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#surya" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
                 <h5 class="card-title">Drg. Raditya Aiman Permana</h5>
                 <img src="Foto Radi.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Aiman berfokus pada pemulihan struktur gigi yang rusak dengan teknik modern dan bahan berkualitas tinggi</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#radi" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
                 <h5 class="card-title">Drg. Ahmad Marioale Sulolipu</h5>
                 <img src="https://scontent.fcgk4-4.fna.fbcdn.net/v/t1.18169-9/10482593_487541774722754_8953259003322339041_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgXyT5R637uABIc3v2JvjElUuFrvCULhaVS4Wu8JQuFk_f3L4WjhwaRsFOwkY6d181aviR64iJtwDmfkIrW8Ss&_nc_ohc=l3TGP8qKi5AQ7kNvgGpalTJ&_nc_ht=scontent.fcgk4-4.fna&oh=00_AYAHJJRab1NUcwv9BKvNtd7BvpTLs0h9RlTSlxaEX2TD6A&oe=668169A8" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Mario memiliki keahlian spesifik dalam perawatan tambalan gigi yang presisi dan estetis demi kenyamanan pasien.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#mario" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
                 <h5 class="card-title">Drg. Muhammad Yahya</h5>
                 <img src="https://scontent.fcgk4-2.fna.fbcdn.net/v/t39.30808-1/285728928_707401853889939_7567600931586379314_n.jpg?stp=dst-jpg_p200x200&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHTKdGX9dAKLr0yYbGU8qrGmJoLd_ROGfKYmgt39E4Z8gRVINj_UEYBDmXBzIq7e_Z_cbC65t9v3Vqphvzf8_lo&_nc_ohc=P-KsBMrwaMEQ7kNvgFoQlYI&_nc_ht=scontent.fcgk4-2.fna&oh=00_AYAa8rTgqk_WIIyHYEmxhi_4i4c_6qde46PtzyuNJKu3XQ&oe=666A276C" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Yahya spesialis estetika gigi yang berfokus pada peningkatan penampilan senyuman pasien, seperti veneer, pemutihan gigi, dan pemasangan mahkota gigi.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#yahya" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -168,9 +168,9 @@
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Drg. Kinanty Kusuma</h5>
-                <img src="foto kinann.JPG" class="img-thumbnail" alt="...">
+                <img src="foto kinan.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Kinan menawarkan solusi komprehensif untuk memperbaiki senyuman pasien. Dari pemutihan gigi hingga pembentukan ulang gigi, beliau memastikan hasil yang memuaskan.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#kinan" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -180,7 +180,7 @@
                 <h5 class="card-title">Drg. Nilla Aristya Untarry</h5>
                 <img src="https://media.licdn.com/dms/image/D5603AQH6HH0t_zB_BQ/profile-displayphoto-shrink_800_800/0/1694852059647?e=2147483647&v=beta&t=zxmbPMYgPHxmoj1sCyfinKGFsMuxYYqSTZSxkI6bw8Q" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Nilla ahli dalam berbagai prosedur estetika gigi, termasuk pemutihan gigi dan pemasangan veneer. Beliau mengutamakan kenyamanan dan kepuasan pasien.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#nilla" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@
                 <h5 class="card-title">Drg. Muhammad Said Abbas</h5>
                 <img src="foto abbas.jpg" class="img-thumbnail" alt="...">
                 <p class="card-text">Drg. Abbas memiliki keahlian dalam mempercantik senyuman, seperti veneer, bonding, dan kontur gigi, pasien dijamin mencapai senyuman yang menawan.</p>
-                <a href="#" class="btn btn-primary">More Info</a>
+                <a href="index.php?p=profiledrg#abbas" class="btn btn-primary">More Info</a>
               </div>
             </div>
           </div>
