@@ -59,8 +59,8 @@
   }
 
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: grey;
+    color: black;
     text-align: center;
     padding: 20px;
   }
