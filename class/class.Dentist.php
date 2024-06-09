@@ -32,18 +32,19 @@ class Dentist extends Connection {
     }
     
     public function AddDentist(){
-        $sql = "INSERT INTO Dentist (dentistID, fname, lname, sex,address, licenseID, email, telp, user->userid)
+        $sql = "INSERT INTO dentist (dentistID, fname, lname, sex,address, licenseID, email, telp, userid)
                 VALUES ('$this->dentistID',
-                    fname = '$this->fname',
-                    lname = '$this->lname',
-                    sex = '$this->sex',
-                    address = '$this->address',
-                    licenseID = '$this->licenseID',
-                    email = '$this->email',
-                    tel = '$this->tel',
-                    userid = '$this->userid'')";
+                    $this->fname,
+                    $this->lname,
+                    $this->sex,
+                    $this->address,
+                    '$this->licenseID',
+                    $this->email,
+                    '$this->telp',
+                    ".$this->user->userid.")";
 
         $this->hasil = mysqli_query($this->connection, $sql);
+
         if($this->hasil)
             $this->message ='Data berhasil ditambahkan!';
         else
@@ -60,7 +61,7 @@ class Dentist extends Connection {
                     licenseID = '$this->licenseID',
                     email = '$this->email',
                     telp = '$this->telp',
-                    userid = '$this->userid'
+                    userid = ".$this->user->userid."
                 WHERE dentistID = '$this->dentistID'";
 
         $this->hasil = mysqli_query($this->connection, $sql);
@@ -71,7 +72,7 @@ class Dentist extends Connection {
     }
 
     public function DeleteDentist(){
-        $sql = "DELETE FROM Dentist WHERE dentistID='$this->dentistID'";
+        $sql = "DELETE FROM dentist WHERE dentistID='$this->dentistID'";
         $this->hasil = mysqli_query($this->connection, $sql);
         if($this->hasil)
             $this->message ='Data berhasil dihapus!';
@@ -106,7 +107,7 @@ class Dentist extends Connection {
     }
 
     public function SelectOneDentist(){
-        $sql = "SELECT * FROM Dentist WHERE dentistID='$this->dentistID'";
+        $sql = "SELECT * FROM dentist WHERE dentistID='$this->dentistID'";
         $resultOne = mysqli_query($this->connection, $sql);
         if(mysqli_num_rows($resultOne) == 1){
             $this->hasil = true;

@@ -15,7 +15,7 @@
             $mail->Host = "smtp.gmail.com";
             $mail->Port = 587;
             $mail->Username = "raihansultan.pashabasuki@students.esqbs.ac.id";
-            $mail->Password = "icuic4u2";
+            $mail->Password = "";
             $mail->From = "raihansultan.pashabasuki@students.esqbs.ac.id";
             $mail->FromName = "Raihan Sultan";
             $mail->SMTPOptions = array(
