@@ -187,7 +187,7 @@
                 src="https://media.licdn.com/dms/image/D5603AQEALmZwW2oc4A/profile-displayphoto-shrink_800_800/0/1692865198786?e=1720051200&v=beta&t=mk7gfUTHicXqUYK4mrxLFAwH01OcruNtF8CQtHKKxWE"
                 class="img-thumbnail" alt="...">
               <p class="card-text">Drg. Raihan merupakan seorang spesialis tambal gigi yang mahir dalam menangani kerusakan gigi akibat karies</p>
-              <a href="#" class="btn btn-primary">More Info</a>
+              <a href="index.php?p=profiledrg#raihan" class="btn btn-primary">More Info</a>
             </div>
           </div>
           <div class="card col-sm-3">
@@ -197,7 +197,7 @@
                 src="https://media.licdn.com/dms/image/D5603AQFWCyFhP1TUZg/profile-displayphoto-shrink_400_400/0/1717168612779?e=1722470400&v=beta&t=tVTacKsp8b5RlhKxqSDRAcXj9tiUrM5mlcQArf9vKAo"
                 class="img-thumbnail" alt="...">
               <p class="card-text">Drg. Suryandari dikenal karena pendekatannya yang ramah dan teliti dalam perawatan gigi berlubang.</p>
-              <a href="#" class="btn btn-primary">More Info</a>
+              <a href="index.php?p=profiledrg#surya" class="btn btn-primary">More Info</a>
             </div>
           </div>
           <div class="card col-sm-3">
@@ -207,7 +207,7 @@
                 src="Foto Radi.jpg"
                 class="img-thumbnail" alt="...">
               <p class="card-text">Drg. Aiman berfokus pada pemulihan struktur gigi yang rusak dengan teknik modern dan bahan berkualitas tinggi</p>
-              <a href="#" class="btn btn-primary">More Info</a>
+              <a href="index.php?p=profiledrg#radi" class="btn btn-primary">More Info</a>
             </div>
           </div>
         </div>
