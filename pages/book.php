@@ -104,7 +104,7 @@ if(isset($_POST['btnSubmit'])){
 <tr>
 <td></td>
 <td></td>
-<td><input type="submit" class="btn btn-primary" value="Proceed to Payment" name="btnSubmit">
+<td><input type="submit" class="btn btn-primary" value="Book Now" name="btnSubmit">
 <a href="index.php" class="btn btn-danger">Cancel</a></td>
 </tr>
 </table>
