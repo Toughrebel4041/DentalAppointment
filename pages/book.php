@@ -24,7 +24,9 @@ if(isset($_POST['btnSubmit'])){
             }
         }
 ?>
-<h4 class="title"><span class="text"><strong>Form Booking</strong></span></h4>
+<br>
+<br>
+<h4 class="title"><span class="text"><strong>Form Booking Appointment</strong></span></h4>
 <form action="" method="post">
 <table class="table" border="0">
 <tr>
