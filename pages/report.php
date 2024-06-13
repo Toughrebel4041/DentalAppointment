@@ -46,7 +46,7 @@ $content .= '<tr>
 </tr>';
 $content .= '<tr>
      <th>Dokter</th>
-     <td>: ' . $appointmentData['doctorName'] . '</td>
+     <td>: ' . $appointmentData['dentistName'] . '</td>
 </tr>';
 $content .= '<tr>
      <th>Tindakan</th>
