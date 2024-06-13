@@ -1,7 +1,7 @@
 <?php
 ob_start();
 require_once 'inc.koneksi.php';
-require_once 'Patient.php';
+require_once './class/class.Patient.php';
 
 $patient = new Patient();
 $patient->userid = $_SESSION["userid"];
