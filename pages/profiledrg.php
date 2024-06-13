@@ -124,7 +124,7 @@
     <div class="drgprofile">
         <img src="Foto Radi.jpg" class="img-thumbnail" alt="...">
         <div>
-            <div class="card-text">D<h3>Drg. Raditya Aiman Permana</h3>
+            <div class="card-text"><h3>Drg. Raditya Aiman Permana</h3>
                     <p><strong>Tempat/Tanggal Lahir:</strong> Jakarta, 25 Mei 1985</p>
                     <p><strong>Riwayat Pendidikan:</strong></p>
                     <ul>
