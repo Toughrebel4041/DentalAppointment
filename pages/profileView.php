@@ -1,25 +1,41 @@
 <?php
 ob_start();
-require_once 'inc.koneksi.php';
-require_once './class/class.Patient.php';
+require_once('./class/class.Patient.php');
+require_once('./class/class.User.php');
 
 $patient = new Patient();
-$patient->userid = $_SESSION["userid"];
-$patient->SelectOnePatient();
+$objUser = new User();
+if (isset($_SESSION['userid'])) {
+    $patient->userid = $_SESSION['userid'];
+}else {
+    echo "<script> alert('User not logged in'); </script>";
+    echo '<script> window.location = "login.php";</script>';
+    exit();
+}
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['update'])) {
-        $patient->fname = $_POST['fname'];
-        $patient->lname = $_POST['lname'];
-        $patient->sex = $_POST['sex'];
-        $patient->address = $_POST['address'];
-        $patient->email = $_POST['email'];
-        $patient->telp = $_POST['telp'];
-        $patient->dentalRecord = $_POST['dentalRecord'];
+if (isset($_POST['btnSubmit'])) {
+    $patient->fname = $_POST['fname'];
+    $patient->lname = $_POST['lname'];
+    $patient->sex = $_POST['sex'];
+    $patient->address = $_POST['address'];
+    $patient->email = $_POST['email'];
+    $patient->telp = $_POST['telp'];
+    $patient->dentalRecord = $_POST['dentalRecord'];
+    $patient->userid = $objUser->userid;
+
+    if (isset($_GET['patientID'])) {
+        $patient->patientID = $_GET['patientID'];
         $patient->UpdatePatient();
-        header("Location:userhome.php?p=profileView");
-        exit();
+    } else {
+        $patient->AddPatient();
     }
+    echo "<script> alert('$patient->message'); </script>";
+    if ($patient->hasil) {
+        echo '<script> window.location = "userhome.php?p=profileView";</script>';
+    }
+} else if (isset($_GET['patientID'])) {
+    $patient->patientID = $_GET['patientID'];
+    $patient->SelectOnePatient();
 }
 ?>
 
@@ -36,6 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container mt-5">
         <h1 class="mb-4">Your Profile</h1>
+
+        <?php
+        if (isset($_SESSION['update_success'])) {
+            echo '<div class="alert alert-success" role="alert">Data berhasil diubah!</div>';
+            unset($_SESSION['update_success']); 
+        }
+        ?>
+
         <form method="POST">
             <div class="mb-3">
                 <label for="fname" class="form-label">First Name</label>
@@ -68,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="dentalRecord" class="form-label">Dental Record</label>
                 <textarea class="form-control" id="dentalRecord" name="dentalRecord" rows="3" required><?php echo htmlspecialchars($patient->dentalRecord); ?></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" name="update" href = "userhome.php?p=Patient">Update</button>
+            <td><input type="submit" class="btn btn-success" value="Save" name="btnSubmit">
         </form>
     </div>
 </body>

@@ -1,5 +1,7 @@
 <?php
+include 'class.User.php';
 class Patient extends Connection {
+    private $user;
     private $patientID='';
     private $fname = '';
     private $lname = '';
@@ -8,6 +10,7 @@ class Patient extends Connection {
     private $telp = '';
     private $address = '';
     private $dentalRecord ='';
+    private $userid = '';
 
     public $hasil = false;
     public $message ='';
@@ -24,23 +27,46 @@ class Patient extends Connection {
         }
     }
 
-    public function AddPatient(){
-        $sql = "INSERT INTO Patient (patientID, fname, lname, sex, address, email, telp, dentalRecord, userid)
-                VALUES ('$this->patientID',  
-                '$this->fname','$this->lname', '$this->sex','$this->address', 
-                '$this->email','$this->telp','$this->dentalRecord', '$this->userid')";
+    function __construct(){
+        parent::__construct();
+        $this->user = new User();
+    }
 
+    private function isValidUserID($userid) {
+        $sql = "SELECT COUNT(*) AS count FROM dentist WHERE userid='$userid'";
+        $result = mysqli_query($this->connection, $sql);
+        $data = mysqli_fetch_assoc($result);
+        return $data['count'] > 0;
+    }
+
+    public function AddPatient() {
+        if (!$this->isValidUserID($this->userid)) {
+            $this->message = 'Invalid userid. User ID does not exist in dentist table.';
+            return;
+        }
+
+        $sql = "INSERT INTO Patient (fname, lname, sex, address, email, telp, dentalRecord, userid)
+                VALUES ('$this->fname','$this->lname', '$this->sex','$this->address', 
+                '$this->email','$this->telp','$this->dentalRecord', '$this->userid')";
+        
         $this->hasil = mysqli_query($this->connection, $sql);
-        if($this->hasil)
-            $this->message ='Data berhasil ditambahkan!';
-        else
-            $this->message ='Data gagal ditambahkan!';
+        
+        if($this->hasil) {
+            $this->message = 'Data berhasil ditambahkan!';
+        } else {
+            $this->message = 'Data gagal ditambahkan! Error: ' . mysqli_error($this->connection);
+        }
     }
 
     public function UpdatePatient(){
         $sql = "UPDATE Patient
-                SET fname ='$this->fname',
-                    address = '$this->address', '$this->lname', '$this->sex', '$this->telp'  
+                SET patientID = '$this->patientID',
+                    fname ='$this->fname', 
+                    lname = '$this->lname', 
+                    sex = '$this->sex', 
+                    address = '$this->address',
+                    email = '$this->email',
+                    telp = '$this->telp'  
                 WHERE patientID = '$this->patientID'";
 
         $this->hasil = mysqli_query($this->connection, $sql);
@@ -60,7 +86,7 @@ class Patient extends Connection {
     }
 
     public function SelectAllPatient(){
-        $sql = "SELECT * FROM Patient";
+        $sql = "SELECT * FROM patient";
         $result = mysqli_query($this->connection, $sql);
         $arrResult = Array();
         $count=0;
@@ -87,7 +113,7 @@ class Patient extends Connection {
     }
 
     public function SelectOnePatient(){
-        $sql = "SELECT * FROM Patient WHERE patientID='$this->patientID'";
+        $sql = "SELECT * FROM patient WHERE patientID='$this->patientID'";
         $resultOne = mysqli_query($this->connection, $sql);
         if(mysqli_num_rows($resultOne) == 1){
             $this->hasil = true;
