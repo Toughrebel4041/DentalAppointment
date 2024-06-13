@@ -7,7 +7,12 @@ require_once dirname(__FILE__) . '/../vendor/autoload.php';
 use Spipu\Html2Pdf\Html2Pdf;
 
 
-$appointmentId = $_GET['appointmentId']; 
+$appointmentId = '1';
+
+// if (isset($_GET['appointmentId'])){
+//   $appointmentId = $_GET['appointmentId'];
+// }
+// var_dump($appointmentId);
 
 
 $appointment = new Appointment();
@@ -25,9 +30,9 @@ $appointmentData = [
   'patientName' => $appointment->name,
   'appointmentDate' => $appointment->date,
   'appointmentTime' => $appointment->time,
-  'dentistName' => $dentistID, 
-  'treatment' => $treatmentID, 
-  'fee' => $appointment->fee, 
+  'dentistName' => $appointment->docter, 
+  'treatment' => $appointment->namaTreatment, 
+  'fee' => $appointment->hargaTreatment, 
 ];
 
 $content = '<h1>Struk Appointment Dental</h1>';
