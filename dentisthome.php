@@ -75,7 +75,7 @@ require "inc.koneksi.php";
           </ul>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="dentisthome.php?p=book">Booking</a>
+            <a class="nav-link active" aria-current="page" href="dentisthome.php?p=bookList">All Booking</a>
             </li>
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="dentisthome.php?p=profileView">Your Profile</a>
