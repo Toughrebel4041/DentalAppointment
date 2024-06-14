@@ -84,6 +84,32 @@ class Patient extends Connection {
             $this->message ='Data gagal dihapus!';
     }
 
+    public function SelectYourProfile(){
+        $sql = "SELECT p.*, u.userid, u.username FROM patient p INNER JOIN user u WHERE p.patientID=u.userid";
+        $result = mysqli_query($this->connection, $sql);
+        $arrResult = Array();
+        $count=0;
+        if(mysqli_num_rows($result) < 3){
+        
+        while ($data = mysqli_fetch_array($result))
+        {
+        $objPatient = new Patient();
+        $objPatient->patientID=$data['patientID'];
+        $objPatient->fname=$data['fname'];
+        $objPatient->lname=$data['lname'];
+        $objPatient->sex=$data['sex'];
+        $objPatient->email=$data['email'];
+        $objPatient->telp=$data['telp'];
+        $objPatient->address=$data['address'];
+        $objPatient->user->userid=$data['userid'];
+        $objPatient->dentalRecord=$data['dentalRecord'];
+        $arrResult[$count] = $objPatient;
+        }
+
+        }
+        return $arrResult;
+    }
+
     public function SelectAllPatient(){
         $sql = "SELECT * FROM patient";
         $result = mysqli_query($this->connection, $sql);
@@ -111,6 +137,7 @@ class Patient extends Connection {
         return $arrResult;
     }
 
+    
     public function SelectOnePatient(){
         $sql = "SELECT * FROM patient WHERE patientID='$this->patientID'";
         $resultOne = mysqli_query($this->connection, $sql);

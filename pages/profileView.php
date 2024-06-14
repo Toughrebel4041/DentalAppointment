@@ -3,10 +3,10 @@ ob_start();
 require_once('./class/class.Patient.php');
 require_once('./class/class.User.php');
 
-$patient = new Patient();
+$objPatient = new Patient();
 $objUser = new User();
 if (isset($_SESSION['userid'])) {
-    $patient->userid = $_SESSION['userid'];
+    $objPatient->userid = $_SESSION['userid'];
 } else {
     echo "<script> alert('User not logged in'); </script>";
     echo '<script> window.location = "login.php";</script>';
@@ -14,29 +14,29 @@ if (isset($_SESSION['userid'])) {
 }
 
 if (isset($_POST['btnSubmit'])) {
-    $patient->fname = $_POST['fname'];
-    $patient->lname = $_POST['lname'];
-    $patient->sex = $_POST['sex'];
-    $patient->address = $_POST['address'];
-    $patient->email = $_POST['email'];
-    $patient->telp = $_POST['telp'];
-    $patient->dentalRecord = $_POST['dentalRecord'];
-    $patient->user->userid = $_POST['userid'];  // Use the correct user ID from the session
+    $objPatient->fname = $_POST['fname'];
+    $objPatient->lname = $_POST['lname'];
+    $objPatient->sex = $_POST['sex'];
+    $objPatient->address = $_POST['address'];
+    $objPatient->email = $_POST['email'];
+    $objPatient->telp = $_POST['telp'];
+    $objPatient->dentalRecord = $_POST['dentalRecord'];
+    $objPatient->user->userid = $_POST['userid'];  // Use the correct user ID from the session
 
-    if (isset($_GET['patientID'])) {
-        $patient->patientID = $_GET['patientID'];
-        $patient->UpdatePatient();
+    if(isset($_GET['patientID'])){
+        $objPatient->patientID = $_GET['patientID'];
+        $objPatient->UpdatePatient();
     } else {
-        $patient->AddPatient();
+     $objPatient->AddPatient();
     }
-    echo "<script> alert('$patient->message'); </script>";
-    if ($patient->hasil) {
-        echo '<script> window.location = "userhome.php?p=profileView";</script>';
+    echo "<script> alert('$objPatient->message'); </script>";
+    if($objPatient->hasil){
+        echo '<script> window.location = "userhome.php?p=home";</script>';
     }
-} else if (isset($_GET['patientID'])) {
-    $patient->patientID = $_GET['patientID'];
-    $patient->SelectOnePatient();
-}
+} else if (isset($_GET['patientID'])){
+        $objPatient->patientID = $_GET['patientID'];
+        $objPatient->SelectOnePatient();
+    }
 ?>
 <h4 class="title">
     <span class="text">
@@ -48,22 +48,22 @@ if (isset($_POST['btnSubmit'])) {
         <tr>
         <td>User ID</td>
         <td>:</td>
-        <td><input readonly="readonly" type="text" class="form-control" name="userid" value="<?php echo $objUser->userid; ?>"></td>
+        <td><input readonly="readonly" type="text" class="form-control" name="userid" value="<?php echo $objPatient->userid; ?>"></td>
     </tr>
         <tr>
         <td>Patient ID</td>
         <td>:</td>
-        <td><input readonly="readonly" type="text" class="form-control" name="patientID" value="<?php echo $objUser->patientID; ?>"></td>
+        <td><input readonly="readonly" type="text" class="form-control" name="patientID" value="<?php echo $objPatient->patientID; ?>"></td>
     </tr>
     <tr>
         <td>First Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" userid="fname" name="fname" value="<?php echo $objUser->fname; ?>"></td>
+        <td><input type="text" class="form-control" userid="fname" name="fname" value="<?php echo $objPatient->fname; ?>"></td>
     </tr>    
     <tr>
         <td>Last Name</td>
         <td>:</td>
-        <td><input type="text" class="form-control" userid="lname" name="lname" value="<?php echo $objUser->lname; ?>"></td>
+        <td><input type="text" class="form-control" userid="lname" name="lname" value="<?php echo $objPatient->lname; ?>"></td>
     </tr>    
     <tr>
         <td>Sex</td>
@@ -74,22 +74,22 @@ if (isset($_POST['btnSubmit'])) {
     <tr>
         <td>Address</td>
         <td>:</td>
-        <td><input type="text" class="form-control" userid="address" name="address" value="<?php echo $objUser->address; ?>"></td>
+        <td><input type="text" class="form-control" userid="address" name="address" value="<?php echo $objPatient->address; ?>"></td>
     </tr>   
     <tr>
         <td>Email</td>
         <td>:</td>
-        <td><input type="email" class="form-control" userid="email" name="email" value="<?php echo $objUser->email; ?>"></td>
+        <td><input type="email" class="form-control" userid="email" name="email" value="<?php echo $objPatient->email; ?>"></td>
     </tr>   
     <tr>
         <td>Telephone</td>
         <td>:</td>
-        <td><input type="tel" class="form-control" userid="telp" name="telp" value="<?php echo $objUser->telp; ?>"></td>
+        <td><input type="tel" class="form-control" userid="telp" name="telp" value="<?php echo $objPatient->telp; ?>"></td>
     </tr>   
     <tr>
         <td>Dental Record</td>
         <td>:</td>
-        <td><input type="text" class="form-control" userid="dentalRecord" name="dentalRecord" value="<?php echo $objUser->dentalRecord; ?>"></td>
+        <td><input type="text" class="form-control" userid="dentalRecord" name="dentalRecord" value="<?php echo $objPatient->dentalRecord; ?>"></td>
     </tr>   
     <tr>
         <td colspan="2"></td>
