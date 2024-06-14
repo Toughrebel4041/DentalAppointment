@@ -21,7 +21,7 @@ if (isset($_POST['btnSubmit'])) {
     $patient->email = $_POST['email'];
     $patient->telp = $_POST['telp'];
     $patient->dentalRecord = $_POST['dentalRecord'];
-    $patient->user->userid = $_SESSION['userid'];  // Use the correct user ID from the session
+    $patient->user->userid = $_POST['userid'];  // Use the correct user ID from the session
 
     if (isset($_GET['patientID'])) {
         $patient->patientID = $_GET['patientID'];
