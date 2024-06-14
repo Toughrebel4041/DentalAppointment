@@ -7,6 +7,7 @@ $objPatient = new Patient();
 $objUser = new User();
 if (isset($_SESSION['userid'])) {
     $objPatient->userid = $_SESSION['userid'];
+    $objPatient->SelectOnePatientByUserID(); // Fetch patient data based on userid
 } else {
     echo "<script> alert('User not logged in'); </script>";
     echo '<script> window.location = "login.php";</script>';
@@ -21,22 +22,18 @@ if (isset($_POST['btnSubmit'])) {
     $objPatient->email = $_POST['email'];
     $objPatient->telp = $_POST['telp'];
     $objPatient->dentalRecord = $_POST['dentalRecord'];
-    $objPatient->user->userid = $_POST['userid'];  // Use the correct user ID from the session
 
-    if(isset($_GET['patientID'])){
-        $objPatient->patientID = $_GET['patientID'];
+    if($objPatient->patientID) {
         $objPatient->UpdatePatient();
     } else {
-     $objPatient->AddPatient();
+        $objPatient->AddPatient();
     }
+    
     echo "<script> alert('$objPatient->message'); </script>";
     if($objPatient->hasil){
         echo '<script> window.location = "userhome.php?p=home";</script>';
     }
-} else if (isset($_GET['patientID'])){
-        $objPatient->patientID = $_GET['patientID'];
-        $objPatient->SelectOnePatient();
-    }
+}
 ?>
 <h4 class="title">
     <span class="text">
@@ -46,56 +43,58 @@ if (isset($_POST['btnSubmit'])) {
 <form action="" method="post">
     <table class="table">
         <tr>
-        <td>User ID</td>
-        <td>:</td>
-        <td><input readonly="readonly" type="text" class="form-control" name="userid" value="<?php echo $objPatient->userid; ?>"></td>
-    </tr>
+            <td>User ID</td>
+            <td>:</td>
+            <td><input readonly="readonly" type="text" class="form-control" name="userid" value="<?php echo $objPatient->userid; ?>"></td>
+        </tr>
         <tr>
-        <td>Patient ID</td>
-        <td>:</td>
-        <td><input readonly="readonly" type="text" class="form-control" name="patientID" value="<?php echo $objPatient->patientID; ?>"></td>
-    </tr>
-    <tr>
-        <td>First Name</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" userid="fname" name="fname" value="<?php echo $objPatient->fname; ?>"></td>
-    </tr>    
-    <tr>
-        <td>Last Name</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" userid="lname" name="lname" value="<?php echo $objPatient->lname; ?>"></td>
-    </tr>    
-    <tr>
-        <td>Sex</td>
-        <td>:</td>
-        <td><input type="radio" name="sex" value="M" /> Male <br />
-        <input type="radio" name="sex" value="F" /> Female</td>
-    </tr> 
-    <tr>
-        <td>Address</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" userid="address" name="address" value="<?php echo $objPatient->address; ?>"></td>
-    </tr>   
-    <tr>
-        <td>Email</td>
-        <td>:</td>
-        <td><input type="email" class="form-control" userid="email" name="email" value="<?php echo $objPatient->email; ?>"></td>
-    </tr>   
-    <tr>
-        <td>Telephone</td>
-        <td>:</td>
-        <td><input type="tel" class="form-control" userid="telp" name="telp" value="<?php echo $objPatient->telp; ?>"></td>
-    </tr>   
-    <tr>
-        <td>Dental Record</td>
-        <td>:</td>
-        <td><input type="text" class="form-control" userid="dentalRecord" name="dentalRecord" value="<?php echo $objPatient->dentalRecord; ?>"></td>
-    </tr>   
-    <tr>
-        <td colspan="2"></td>
-        <td><input type="submit" class="btn btn-success" value="Save" name="btnSubmit">
-            <a href="adminhome.php?p=userList" class="btn btn-warning">Cancel</a>
-        </td>
-    </tr>
+            <td>Patient ID</td>
+            <td>:</td>
+            <td><input readonly="readonly" type="text" class="form-control" name="patientID" value="<?php echo $objPatient->patientID; ?>"></td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="fname" value="<?php echo $objPatient->fname; ?>"></td>
+        </tr>    
+        <tr>
+            <td>Last Name</td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="lname" value="<?php echo $objPatient->lname; ?>"></td>
+        </tr>    
+        <tr>
+            <td>Sex</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="sex" value="M" <?php echo ($objPatient->sex == 'M') ? 'checked' : ''; ?> /> Male 
+                <input type="radio" name="sex" value="F" <?php echo ($objPatient->sex == 'F') ? 'checked' : ''; ?> /> Female
+            </td>
+        </tr> 
+        <tr>
+            <td>Address</td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="address" value="<?php echo $objPatient->address; ?>"></td>
+        </tr>   
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="email" class="form-control" name="email" value="<?php echo $objPatient->email; ?>"></td>
+        </tr>   
+        <tr>
+            <td>Telephone</td>
+            <td>:</td>
+            <td><input type="tel" class="form-control" name="telp" value="<?php echo $objPatient->telp; ?>"></td>
+        </tr>   
+        <tr>
+            <td>Dental Record</td>
+            <td>:</td>
+            <td><input type="text" class="form-control" name="dentalRecord" value="<?php echo $objPatient->dentalRecord; ?>"></td>
+        </tr>   
+        <tr>
+            <td colspan="2"></td>
+            <td><input type="submit" class="btn btn-success" value="Save" name="btnSubmit">
+                <a href="userhome.php?p=home" class="btn btn-warning">Cancel</a>
+            </td>
+        </tr>
     </table>
 </form>

@@ -138,22 +138,23 @@ class Patient extends Connection {
     }
 
     
-    public function SelectOnePatient(){
-        $sql = "SELECT * FROM patient WHERE patientID='$this->patientID'";
+    public function SelectOnePatientByUserID(){
+        $sql = "SELECT * FROM patient WHERE userid='$this->userid'";
         $resultOne = mysqli_query($this->connection, $sql);
         if(mysqli_num_rows($resultOne) == 1){
             $this->hasil = true;
             $data = mysqli_fetch_assoc($resultOne);
             $this->patientID = $data['patientID'];
             $this->fname = $data['fname'];
-            $this->lname=$data['lname'];
-            $this->sex=$data['sex'];
-            $this->email=$data['email'];
-            $this->telp=$data['telp'];
-            $this->address=$data['address'];
-            $this->userid=$data['userid'];
-            $this->dentalRecord=$data['dentalRecord'];
+            $this->lname = $data['lname'];
+            $this->sex = $data['sex'];
+            $this->email = $data['email'];
+            $this->telp = $data['telp'];
+            $this->address = $data['address'];
+            $this->userid = $data['userid'];
+            $this->dentalRecord = $data['dentalRecord'];
         }
     }
+    
 }
 ?>
