@@ -21,9 +21,6 @@
         <th>ID Treatment</th>
     </tr>
     <?php
-    require_once('./class/class.Dentist.php');
-    require_once('./class/class.User.php');
-    require_once('./class/class.Patient.php');
     require_once('./class/class.Appointment.php');
     $objAppointment = new Appointment();
     $arrayResult = $objAppointment->SelectAllAppointment();
