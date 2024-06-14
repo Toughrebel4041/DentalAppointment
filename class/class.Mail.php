@@ -1,43 +1,41 @@
 <?php
 require_once dirname(__FILE__) . '/../vendor/autoload.php';
 
+// require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-class Mail
-{
-    public static function SendMail($to, $name, $subject, $message)
-    {
-        $mail = new PHPMailer();
-        $mail->IsSMTP();
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = "tls";
-        $mail->Host = "smtp.gmail.com";
-        $mail->Port = 587;
-        $mail->Username = "suryandaripuspita.hartiati@students.esqbs.ac.id";
-        $mail->Password = "";
-        $mail->From = "suryandaripuspita.hartiati@students.esqbs.ac.id";
-        $mail->FromName = "desury";
-        $mail->SMTPOptions = array(
-            'ssl' => array(
-                'verify_peer' => false,
-                'verify_peer_name' => false,
-                'allow_self_signed' => true
-            )
-        );
-        $mail->WordWrap = 50;
-        $mail->IsHTML(true);
 
-        $mail->AddAddress($to, $name);
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->AltBody = "This is the body in plain text for non-HTML mail clients";
-        $mail->SMTPDebug = 0;
+class Mail {
+    public static function SendMail($to, $name, $subject, $message) {
+        $mail = new PHPMailer(true);
+        try {
+            // Pengaturan server SMTP
+            $mail->isSMTP();
+            $mail->Host = 'smtp.example.com'; // Ganti dengan host SMTP Anda
+            $mail->SMTPAuth = true;
+            $mail->Username = 'radityaaiman.permana@students.esqbs.ac.id'; 
+            $mail->Password = ''; 
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
 
-        if (!$mail->Send()) {
-            echo "Message could not be sent.<p>";
-            echo "Mailer Error : " . $mail->ErrorInfo;
-            exit;
+            // Pengirim
+            $mail->setFrom('radityaaiman.permana@students.esqbs.ac.id', 'radi');
+
+            // Penerima
+            $mail->addAddress($to, $name);
+
+            // Konten email
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body    = $message;
+
+            // Kirim email
+            $mail->send();
+            echo 'Pesan berhasil dikirim';
+        } catch (Exception $e) {
+            echo "Pesan tidak dapat dikirim. Mailer Error: {$mail->ErrorInfo}";
         }
     }
 }
+?>
