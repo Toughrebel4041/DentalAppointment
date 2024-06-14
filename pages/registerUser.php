@@ -1,6 +1,6 @@
 <?php
-require_once('./class/class.User.php');
 require_once('./class/class.Patient.php');
+require_once('./class/class.User.php');
 
 if(isset($_POST['btnSubmit'])){
     $inputemail=$_POST["email"];

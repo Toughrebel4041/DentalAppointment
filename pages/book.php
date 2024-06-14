@@ -1,21 +1,18 @@
 <?php
 require_once('./class/class.Appointment.php');
+require_once('./class/class.Patient.php');
 if(isset($_POST['btnSubmit'])){
-    $inputemail=$_POST["email"];
-    $objPatient = new User();
-    $objPatient->ValidateEmail($inputemail);
+    $objPatient = new Patient();
     if($objPatient->hasil){
         echo "<script>alert('Email sudah terdaftar'); </script>";
     } else {
             $objPatient = new Patient();
             // POST data menuju database
-                $objPatient->email=$_POST["email"];
-                $objPatient->fname=$_POST["fname"];
-                $objPatient->lname=$_POST["lname"];
-                $objPatient->address=$_POST["address"];
-                $objPatient->sex=$_POST["sex"];
-                $objPatient->dentalRecord=$_POST["dentalRecord"];
-                $objPatient->telp=$_POST["telp"];
+                $objPatient->dentistID=$_POST["dentistID"];
+                $objPatient->treatmentID=$_POST["treatmentID"];
+                $objPatient->date=$_POST["date"];
+                $objPatient->time=$_POST["time"];
+                $objPatient->keluhan=$_POST["keluhan"];
                 $objPatient->AddPatient();
                 if($objPatient->hasil){
                     echo "<script> alert('Biodata berhasil disimpan'); </script>";

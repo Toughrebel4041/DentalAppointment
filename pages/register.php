@@ -18,7 +18,7 @@ if(isset($_POST['btnSubmit'])){
                 $objUser->AddUser();
                 if($objUser->hasil){
                     echo "<script> alert('Registrasi berhasil'); </script>";
-                    echo '<script> window.location="index.php?p=registerUser"; </script>';
+                    echo '<script> window.location="index.php?p=login"; </script>';
                 }
             }
         }
