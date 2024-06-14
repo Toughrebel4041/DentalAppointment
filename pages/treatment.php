@@ -68,7 +68,7 @@
                         <p class="card-text">Bleaching Gigi atau pemutihan gigi merupakan prosedur estetika yang
                             digunakan untuk
                             membuat permukaan gigi tampak lebih putih, dan bersih.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -80,7 +80,7 @@
                         <p class="card-text">Direct veneer adalah jenis veneer yang dipasang secara langsung pada pasien
                             menggunakan
                             bahan resin komposit.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -91,7 +91,7 @@
                             class="img-thumbnail" alt="...">
                         <p class="card-text">Inderect veneer adalah jenis veneer yang proses pemasangan tidak
                             dilakukan langsung pada gigi.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -103,7 +103,7 @@
                         <p class="card-text">Zirconia adalah salah satu bahan yang dapat digunakan untuk gigi palsu,
                             bahan ini
                             terbuat dari titanium.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -117,7 +117,7 @@
                             yang diindikasikan pada pasien yang kehilangan gigi aslinya, dan sangat disarankan untuk
                             gigi belakang.
                         </p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -129,7 +129,7 @@
                         <p class="card-text">Scaling Gigi adalah prosedur untuk melakukan pembersihan karang gigi.
                             Karang gigi
                             terbentuk dari tumpukan plak yang menempel pada permukaan gigi. </p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -142,7 +142,7 @@
                             digunakan
                             oleh ortodontis untuk memperbaiki gigi atau rahang yang tidak rata dan gigi yang bertumpuk.
                         </p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -155,7 +155,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -168,7 +168,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -181,7 +181,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -194,7 +194,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -207,7 +207,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
                 <div class="card col-sm-4" style="width: 27.86rem;">
@@ -220,7 +220,7 @@
                             tampilan behel
                             menyatu dengan warna gigi, cocok digunakan pada orang yang mementingkan estetik pada
                             pekerjaaanya.</p>
-                        <a href="#" class="btn btn-primary">Book Now</a>
+                        <a href="index.php?p=login" class="btn btn-primary">Book Now</a>
                     </div>
                 </div>
             </div>
