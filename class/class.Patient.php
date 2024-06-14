@@ -33,7 +33,7 @@ class Patient extends Connection {
     }
 
     private function isValidUserID($userid) {
-        $sql = "SELECT COUNT(*) AS count FROM dentist WHERE userid='$userid'";
+        $sql = "SELECT COUNT(*) AS count FROM user WHERE userid='$userid'";
         $result = mysqli_query($this->connection, $sql);
         $data = mysqli_fetch_assoc($result);
         return $data['count'] > 0;
@@ -41,7 +41,7 @@ class Patient extends Connection {
 
     public function AddPatient() {
         if (!$this->isValidUserID($this->userid)) {
-            $this->message = 'Invalid userid. User ID does not exist in dentist table.';
+            $this->message = 'Invalid userid. User ID does not exist in user table.';
             return;
         }
 
@@ -60,8 +60,7 @@ class Patient extends Connection {
 
     public function UpdatePatient(){
         $sql = "UPDATE Patient
-                SET patientID = '$this->patientID',
-                    fname ='$this->fname', 
+                SET fname ='$this->fname', 
                     lname = '$this->lname', 
                     sex = '$this->sex', 
                     address = '$this->address',

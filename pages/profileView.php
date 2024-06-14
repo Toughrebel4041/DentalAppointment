@@ -7,7 +7,7 @@ $patient = new Patient();
 $objUser = new User();
 if (isset($_SESSION['userid'])) {
     $patient->userid = $_SESSION['userid'];
-}else {
+} else {
     echo "<script> alert('User not logged in'); </script>";
     echo '<script> window.location = "login.php";</script>';
     exit();
@@ -21,7 +21,7 @@ if (isset($_POST['btnSubmit'])) {
     $patient->email = $_POST['email'];
     $patient->telp = $_POST['telp'];
     $patient->dentalRecord = $_POST['dentalRecord'];
-    $patient->userid = $objUser->userid;
+    $patient->userid = $_SESSION['userid'];  // Use the correct user ID from the session
 
     if (isset($_GET['patientID'])) {
         $patient->patientID = $_GET['patientID'];

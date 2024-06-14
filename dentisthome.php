@@ -79,7 +79,7 @@ require "inc.koneksi.php";
             <a class="nav-link active" aria-current="page" href="dentisthome.php?p=bookList">All Booking</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="dentisthome.php?p=profileView">Your Profile</a>
+            <a class="nav-link active" aria-current="page" href="dentisthome.php?p=profileViewDentist">Your Profile</a>
             </li>
           </ul>
           <a class="navbar-brand" href="dentisthome.php?p=logout">Logout</a>
