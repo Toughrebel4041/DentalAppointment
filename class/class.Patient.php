@@ -2,7 +2,7 @@
 include 'class.User.php';
 class Patient extends Connection {
     private $user;
-    private $patientID='';
+    private $patientID= 0;
     private $fname = '';
     private $lname = '';
     private $sex = '';
@@ -36,7 +36,7 @@ class Patient extends Connection {
         $sql = "SELECT COUNT(*) AS count FROM user WHERE userid='$userid'";
         $result = mysqli_query($this->connection, $sql);
         $data = mysqli_fetch_assoc($result);
-        return $data['count'] > 0;
+        return $data['count'] >= 0;
     }
 
     public function AddPatient() {
@@ -45,9 +45,9 @@ class Patient extends Connection {
             return;
         }
 
-        $sql = "INSERT INTO Patient (fname, lname, sex, address, email, telp, dentalRecord, userid)
+        $sql = "INSERT INTO patient (fname, lname, sex, address, email, telp, dentalRecord)
                 VALUES ('$this->fname','$this->lname', '$this->sex','$this->address', 
-                '$this->email','$this->telp','$this->dentalRecord', '$this->userid')";
+                '$this->email',$this->telp,'$this->dentalRecord')";
         
         $this->hasil = mysqli_query($this->connection, $sql);
         
@@ -59,7 +59,7 @@ class Patient extends Connection {
     }
 
     public function UpdatePatient(){
-        $sql = "UPDATE Patient
+        $sql = "UPDATE patient
                 SET fname ='$this->fname', 
                     lname = '$this->lname', 
                     sex = '$this->sex', 
@@ -76,7 +76,7 @@ class Patient extends Connection {
     }
 
     public function DeletePatient(){
-        $sql = "DELETE FROM Patient WHERE patientID='$this->patientID'";
+        $sql = "DELETE FROM patient WHERE patientID='$this->patientID'";
         $this->hasil = mysqli_query($this->connection, $sql);
         if($this->hasil)
             $this->message ='Data berhasil dihapus!';
